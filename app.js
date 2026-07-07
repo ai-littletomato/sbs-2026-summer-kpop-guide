@@ -434,32 +434,110 @@ const history = [
 
 const mediaByArtist = {
   picheolin: [{ title: "Picheolin Stage", type: "Stage", year: "2026", channel: "YouTube", ...yt("U5Ppzz8jeI8") }],
-  wonpil: [{ title: "A journey", type: "Official MV", year: "2022", channel: "JYP Entertainment", ...yt("5gR8kqgv9oc") }],
-  taeyong: [{ title: "TAP", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("vjGIY_GyAz4") }],
-  ten: [{ title: "Nightwalker", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("ri6FaIavnWA") }],
-  bol4: [{ title: "Lips", type: "Official MV", year: "2024", channel: "BOL4", ...yt("TOy0BL_HrO8") }],
-  bibi: [{ title: "Bam Yang Gang", type: "Official MV", year: "2024", channel: "BIBI", ...yt("smdmEhkIRVc") }],
-  yena: [{ title: "SMILEY", type: "Official MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") }],
-  evan: [{ title: "Dial Tragedy", type: "Official MV", year: "2026", channel: "EVAN", ...yt("F6Ix6V2Cx-w") }],
-  "stray-kids": [{ title: "Chk Chk Boom", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("0P0aQreFs8w") }],
-  ateez: [{ title: "Ice On My Teeth", type: "Official MV", year: "2024", channel: "KQ Entertainment", ...yt("5OflOlcHLb8") }],
-  xikers: [{ title: "BREATHE", type: "Official MV", year: "2025", channel: "KQ Entertainment", ...yt("aUMr0Oi1I-E") }],
-  zerobaseone: [{ title: "Running to Future", type: "Official MV", year: "2026", channel: "ZEROBASEONE", ...yt("v5_GoNFr5wc") }],
-  riize: [{ title: "Boom Boom Bass", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("78lNnCitcBM") }],
-  "nct-wish": [{ title: "poppop", type: "Official MV", year: "2025", channel: "SMTOWN", ...yt("LNETckymbzk") }],
-  nexz: [{ title: "Ride the Vibe", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("8SrSOZUuw8Q") }],
-  kickflip: [{ title: "Twenty", type: "Official MV", year: "2026", channel: "JYP Entertainment", ...yt("Gt0wRAFpwvg") }],
-  axmxp: [{ title: "I Did It", type: "Official MV", year: "2025", channel: "FNC Entertainment", ...yt("p1vNN9UzVvI") }],
-  "alpha-drive-one": [{ title: "Freak Alarm", type: "Official MV", year: "2026", channel: "WAKEONE", ...yt("P8VVnopM610") }],
-  and2ble: [{ title: "Curiosity", type: "Official MV", year: "2026", channel: "AND2BLE", ...yt("m6kmpiOsLVk") }],
-  "kiss-of-life": [{ title: "Sticky", type: "Official MV", year: "2024", channel: "KISS OF LIFE", ...yt("IajeQM00yfE") }],
-  babymonster: [{ title: "SHEESH", type: "Official MV", year: "2024", channel: "BABYMONSTER", ...yt("2wA_b6YHjqQ") }],
-  meovv: [{ title: "HANDS UP", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("sL0pCS6K9bc") }],
-  izna: [{ title: "Not Just Pretty", type: "Official MV", year: "2025", channel: "izna", ...yt("2fyFx2u5fbU") }],
-  hearts2hearts: [{ title: "Rude!", type: "Official MV", year: "2026", channel: "SMTOWN", ...yt("F7sGJVUrkjQ") }],
-  "allday-project": [{ title: "FAMOUS", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("VjvzYjU1mY0") }],
-  "baby-dont-cry": [{ title: "Bittersweet", type: "Official MV", year: "2026", channel: "P NATION", ...yt("P9q7NoOQHIo") }],
-  idid: [{ title: "PUSH BACK", type: "Official MV", year: "2025", channel: "STARSHIP", ...yt("dWZCMV5ZEFk") }],
+  wonpil: [
+    { title: "A journey", type: "Official MV", year: "2022", channel: "JYP Entertainment", ...yt("5gR8kqgv9oc") },
+    { title: "Wish", type: "Live Stage", year: "2026", channel: "WONPIL SOLO CONCERT", ...yt("Zxjiwzyk1aY") },
+  ],
+  taeyong: [
+    { title: "TAP", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("vjGIY_GyAz4") },
+    { title: "Skiii", type: "Live Stage", year: "2026", channel: "TY TRACK", ...yt("Bxkxq4reF_s") },
+  ],
+  ten: [
+    { title: "Nightwalker", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("ri6FaIavnWA") },
+    { title: "Nightwalker", type: "Live Stage", year: "2024", channel: "KBS WORLD TV", ...yt("bHzB4zUT9I4") },
+  ],
+  bol4: [
+    { title: "Lips", type: "Official MV", year: "2024", channel: "BOL4", ...yt("TOy0BL_HrO8") },
+    { title: "LCDC LIVE", type: "Live Stage", year: "2026", channel: "LCDC", ...yt("DXxEZC12Ofs") },
+  ],
+  bibi: [
+    { title: "Bam Yang Gang", type: "Official MV", year: "2024", channel: "BIBI", ...yt("smdmEhkIRVc") },
+    { title: "Scott and Zelda", type: "Live Stage", year: "2025", channel: "KBS WORLD TV", ...yt("jnJhgC1KFHU") },
+  ],
+  yena: [
+    { title: "SMILEY", type: "Official MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") },
+    { title: "Catch Catch", type: "Live Stage", year: "2026", channel: "MBC", ...yt("A0WwrM3i11k") },
+  ],
+  evan: [
+    { title: "Dial Tragedy", type: "Official MV", year: "2026", channel: "EVAN", ...yt("F6Ix6V2Cx-w") },
+    { title: "Ride or Die", type: "Band Live", year: "2026", channel: "it's Live", ...yt("qd1JZa1ln9A") },
+  ],
+  "stray-kids": [
+    { title: "Chk Chk Boom", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("0P0aQreFs8w") },
+    { title: "Chk Chk Boom / Do It / Ceremony", type: "Live Stage", year: "2026", channel: "Gala des Pièces Jaunes", ...yt("t4hoX8b2V9o") },
+  ],
+  ateez: [
+    { title: "Ice On My Teeth", type: "Official MV", year: "2024", channel: "KQ Entertainment", ...yt("5OflOlcHLb8") },
+    { title: "BOUNCY", type: "Live Stage", year: "2024", channel: "Towards The Light", ...yt("oZHxE2GPpGE") },
+  ],
+  xikers: [
+    { title: "BREATHE", type: "Official MV", year: "2025", channel: "KQ Entertainment", ...yt("aUMr0Oi1I-E") },
+    { title: "SUPERPOWER", type: "Live Stage", year: "2026", channel: "D Awards", ...yt("7Y596Fj3QV4") },
+  ],
+  zerobaseone: [
+    { title: "Top 5", type: "Official MV", year: "2026", channel: "ZEROBASEONE", ...yt("7QGRDC7ngpE") },
+    { title: "Top 5", type: "Live Stage", year: "2026", channel: "SBS", ...yt("WYwGejZN1h0") },
+  ],
+  riize: [
+    { title: "Boom Boom Bass", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("78lNnCitcBM") },
+    { title: "Live Stage", type: "Live Stage", year: "2026", channel: "Lollapalooza Chile", ...yt("cirgy6iLLqU") },
+  ],
+  "nct-wish": [
+    { title: "poppop", type: "Official MV", year: "2025", channel: "SMTOWN", ...yt("LNETckymbzk") },
+    { title: "BOY MEETS GIRL", type: "Live Stage", year: "2026", channel: "THE MUSIC DAY", ...yt("rCaAbuuVCmM") },
+  ],
+  nexz: [
+    { title: "Ride the Vibe", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("8SrSOZUuw8Q") },
+    { title: "Legacy", type: "Stage Clip", year: "2026", channel: "NEXZ LIVE TOUR", ...yt("2J_z89aDLZc") },
+  ],
+  kickflip: [
+    { title: "Twenty", type: "Official MV", year: "2026", channel: "JYP Entertainment", ...yt("Gt0wRAFpwvg") },
+    { title: "CEREMONY", type: "Live Stage", year: "2026", channel: "KCON JAPAN", ...yt("9RB851HSszU") },
+  ],
+  axmxp: [
+    { title: "I Did It", type: "Official MV", year: "2025", channel: "FNC Entertainment", ...yt("p1vNN9UzVvI") },
+    { title: "PASS", type: "Live Stage", year: "2026", channel: "D Awards", ...yt("bamkoXsYNzg") },
+  ],
+  "alpha-drive-one": [
+    { title: "Freak Alarm", type: "Official MV", year: "2026", channel: "WAKEONE", ...yt("P8VVnopM610") },
+    { title: "OMG!", type: "Performance", year: "2026", channel: "STUDIO CHOOM", ...yt("FQcBkvKA128") },
+  ],
+  and2ble: [
+    { title: "Curiosity", type: "Official MV", year: "2026", channel: "AND2BLE", ...yt("m6kmpiOsLVk") },
+    { title: "Curious", type: "Band Live", year: "2026", channel: "it's Live", ...yt("3ERdxP-n2Ew") },
+  ],
+  "kiss-of-life": [
+    { title: "Who Is She", type: "Official MV", year: "2026", channel: "KISS OF LIFE", ...yt("ygYPwsjyCzQ") },
+    { title: "Who Is She", type: "Live Stage", year: "2026", channel: "Music Show", ...yt("PneUmh1mqow") },
+  ],
+  babymonster: [
+    { title: "SHEESH", type: "Official MV", year: "2024", channel: "BABYMONSTER", ...yt("2wA_b6YHjqQ") },
+    { title: "DRIP / HOT SAUCE / SHEESH", type: "Band Live", year: "2026", channel: "BABYMONSTER", ...yt("hFBjTEWktOo") },
+  ],
+  meovv: [
+    { title: "HANDS UP", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("sL0pCS6K9bc") },
+    { title: "DDI RO RI", type: "Live Stage", year: "2026", channel: "MBC", ...yt("MbCX3yDCSy4") },
+  ],
+  izna: [
+    { title: "Not Just Pretty", type: "Official MV", year: "2025", channel: "izna", ...yt("2fyFx2u5fbU") },
+    { title: "Mamma Mia", type: "Live Stage", year: "2026", channel: "KCON JAPAN", ...yt("MdIaKe4QBPE") },
+  ],
+  hearts2hearts: [
+    { title: "Rude!", type: "Official MV", year: "2026", channel: "SMTOWN", ...yt("F7sGJVUrkjQ") },
+    { title: "RUDE!", type: "Live Stage", year: "2026", channel: "KCON JAPAN", ...yt("0KuzJDGOJWM") },
+  ],
+  "allday-project": [
+    { title: "FAMOUS", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("VjvzYjU1mY0") },
+    { title: "FAMOUS", type: "Live Stage", year: "2026", channel: "PNC", ...yt("QqUeKK3I4G4") },
+  ],
+  "baby-dont-cry": [
+    { title: "Bittersweet", type: "Official MV", year: "2026", channel: "P NATION", ...yt("P9q7NoOQHIo") },
+    { title: "Bittersweet", type: "Band Live", year: "2026", channel: "it's Live", ...yt("y_HhNgo3jK8") },
+  ],
+  idid: [
+    { title: "PUSH BACK", type: "Official MV", year: "2025", channel: "STARSHIP", ...yt("dWZCMV5ZEFk") },
+    { title: "SLOW TIDE", type: "Live Stage", year: "2026", channel: "IDID FAN-CON", ...yt("lyowssEhRLU") },
+  ],
 };
 
 const sources = [
@@ -500,9 +578,11 @@ function applyTone(el, index) {
 }
 
 function imageFallback(img) {
-  const fallback = img.dataset.fallback;
-  if (fallback && img.src !== new URL(fallback, window.location.href).href) {
-    img.src = fallback;
+  const fallbacks = (img.dataset.fallbacks || "").split("|").filter(Boolean);
+  const next = fallbacks.shift();
+  if (next) {
+    img.dataset.fallbacks = fallbacks.join("|");
+    img.src = next;
     return;
   }
   img.closest(".image-shell")?.classList.add("is-missing");
@@ -519,7 +599,7 @@ function initials(name) {
 }
 
 function coverFallback(artist) {
-  return mediaByArtist[artist.id]?.[0]?.thumbnail || "assets/sbs-2026-summer-poster.jpg";
+  return "assets/sbs-2026-summer-poster.jpg";
 }
 
 function renderGrid(type = "solo") {
@@ -529,7 +609,7 @@ function renderGrid(type = "solo") {
       (artist, index) => `
         <button class="artist-card reveal" type="button" data-id="${artist.id}" style="--tone-a:${getTone(index)[0]};--tone-b:${getTone(index)[1]}">
           <div class="artist-visual image-shell">
-            <img src="${localCover(artist.id)}" data-fallback="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+            <img src="${localCover(artist.id)}" data-fallbacks="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
             <span class="fallback-name">${artist.name}</span>
             <span class="artist-rank">#${artist.rank}</span>
           </div>
@@ -563,17 +643,12 @@ function renderProfile(artist) {
   profile.innerHTML = `
     <div class="profile-hero">
       <div class="profile-cover image-shell">
-        <img src="${localCover(artist.id)}" data-fallback="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+        <img src="${localCover(artist.id)}" data-fallbacks="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
         <span class="fallback-name">${artist.name}</span>
       </div>
       <div>
         <p class="eyebrow">${artist.korean} · ${artist.agency}</p>
         <h2>${artist.name}</h2>
-        <div class="profile-meta">
-          <span class="pill">${artist.type === "solo" ? "个人 / 乐队" : artist.type === "boy" ? "男团" : "女团"}</span>
-          <span class="pill">海报排序 #${artist.rank}</span>
-          <span class="pill">${media.length ? `${media.length} 个官方视频` : "视频待补"}</span>
-        </div>
       </div>
     </div>
     <div class="profile-content">
@@ -588,7 +663,7 @@ function renderProfile(artist) {
             .map(
               (member) => `
                 <span class="member-chip image-shell">
-                  <img src="${member.image}" data-fallback="${coverFallback(artist)}" alt="${member.name}" onerror="imageFallback(this)" />
+                  <img src="${member.image}" data-fallbacks="${localCover(artist.id)}|${coverFallback(artist)}" alt="${member.name}" onerror="imageFallback(this)" />
                   <span class="member-initials">${initials(member.name)}</span>
                   <strong>${member.name}</strong>
                   ${member.cn ? `<small>${member.cn}</small>` : ""}
@@ -619,7 +694,7 @@ function renderProfile(artist) {
                     `,
                   )
                   .join("")
-              : `<div class="media-empty">官方视频链接待补。建议优先使用官方频道 MV 或 SBS/KBS/Mnet 等节目频道舞台。</div>`
+              : ""
           }
         </div>
       </aside>

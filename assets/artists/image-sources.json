@@ -1,0 +1,1373 @@
+{
+  "generatedAt": "2026-07-07T18:19:19",
+  "images": [
+    {
+      "artist": "Picheolin",
+      "kind": "cover",
+      "path": "assets/artists/picheolin/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Dino/profile.webp"
+    },
+    {
+      "artist": "Picheolin",
+      "member": "Dino",
+      "kind": "member",
+      "path": "assets/artists/picheolin/members/dino.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Dino/profile.webp"
+    },
+    {
+      "artist": "Wonpil",
+      "kind": "cover",
+      "path": "assets/artists/wonpil/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Wonpil/profile.webp"
+    },
+    {
+      "artist": "Wonpil",
+      "member": "Wonpil",
+      "kind": "member",
+      "path": "assets/artists/wonpil/members/wonpil.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Wonpil/profile.webp"
+    },
+    {
+      "artist": "TAEYONG",
+      "kind": "cover",
+      "path": "assets/artists/taeyong/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Taeyong/profile.jpg?v=1778950119322"
+    },
+    {
+      "artist": "TAEYONG",
+      "member": "TAEYONG",
+      "kind": "member",
+      "path": "assets/artists/taeyong/members/taeyong.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Taeyong/profile.jpg?v=1778950119322"
+    },
+    {
+      "artist": "TEN",
+      "kind": "cover",
+      "path": "assets/artists/ten/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ten/profile.jpg?v=1777831931517"
+    },
+    {
+      "artist": "TEN",
+      "member": "TEN",
+      "kind": "member",
+      "path": "assets/artists/ten/members/ten.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ten/profile.jpg?v=1777831931517"
+    },
+    {
+      "artist": "BOL4",
+      "kind": "cover",
+      "path": "assets/artists/bol4/cover.jpg",
+      "status": "downloaded",
+      "query": "BOL4 official group photo 2026 concept photo",
+      "source": "https://www.shuomingshu.cn/wp-content/uploads/2022/09/1500211953-15_ujfofgcknlg.jpg"
+    },
+    {
+      "artist": "BOL4",
+      "member": "Ahn Ji-young",
+      "kind": "member",
+      "path": "assets/artists/bol4/members/ahn-ji-young.jpg",
+      "status": "downloaded",
+      "query": "Ahn Ji-young BOL4 official profile photo 2026",
+      "source": "https://pic4.zhimg.com/v2-232e47ec472ead43ffbc339cafd1c447_b.jpg"
+    },
+    {
+      "artist": "BIBI",
+      "kind": "cover",
+      "path": "assets/artists/bibi/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/BIBI/profile.jpg?v=1779270484345"
+    },
+    {
+      "artist": "BIBI",
+      "member": "BIBI",
+      "kind": "member",
+      "path": "assets/artists/bibi/members/bibi.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/BIBI/profile.jpg?v=1779270484345"
+    },
+    {
+      "artist": "YENA",
+      "kind": "cover",
+      "path": "assets/artists/yena/cover.jpg",
+      "status": "downloaded",
+      "query": "YENA official group photo 2026 concept photo",
+      "source": "https://www.juventus.com/images/image/private/t_editorial_landscape_12_desktop/f_auto/dev/h0pgoeqe61ucujoipvsy.jpg"
+    },
+    {
+      "artist": "YENA",
+      "member": "YENA",
+      "kind": "member",
+      "path": "assets/artists/yena/members/yena.jpg",
+      "status": "downloaded",
+      "query": "YENA YENA official profile photo 2026",
+      "source": "https://gd-hbimg.huaban.com/202fa81329a57daac9fce253907845ca611b0aae1bb85-Tqfz3j_fw658"
+    },
+    {
+      "artist": "EVAN",
+      "kind": "cover",
+      "path": "assets/artists/evan/cover.jpg",
+      "status": "downloaded",
+      "query": "EVAN official group photo 2026 concept photo",
+      "source": "https://bkimg.cdn.bcebos.com/pic/838ba61ea8d3fd1f4134b7dc4a07321f95cad0c8f1b6?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70"
+    },
+    {
+      "artist": "EVAN",
+      "member": "EVAN",
+      "kind": "member",
+      "path": "assets/artists/evan/members/evan.jpg",
+      "status": "downloaded",
+      "query": "EVAN EVAN official profile photo 2026",
+      "source": "https://bkimg.cdn.bcebos.com/pic/838ba61ea8d3fd1f4134b7dc4a07321f95cad0c8f1b6?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70"
+    },
+    {
+      "artist": "Stray Kids",
+      "kind": "cover",
+      "path": "assets/artists/stray-kids/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/Stray-Kids/profile.jpg?v=1783338639401"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Bang Chan",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/bang-chan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Bang-Chan/profile.jpg?v=1782571731487"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Lee Know",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/lee-know.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Lee-Know/profile.jpg?v=1782571738480"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Changbin",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/changbin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Changbin/profile.jpg?v=1782571742535"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Hyunjin",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/hyunjin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Hyunjin2/profile.jpg?v=1782571748466"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Han",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/han.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Han/profile.jpg?v=1782571753936"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Felix",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/felix.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Felix/profile.jpg?v=1782571757935"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "Seungmin",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/seungmin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Seungmin/profile.webp"
+    },
+    {
+      "artist": "Stray Kids",
+      "member": "I.N",
+      "kind": "member",
+      "path": "assets/artists/stray-kids/members/i-n.jpg",
+      "status": "downloaded",
+      "query": "manual official/profile source",
+      "source": "https://media.vogue.co.jp/photos/681c50df939006f8b163ebca/master/w_1600%2Cc_limit/01-0182.jpg"
+    },
+    {
+      "artist": "ATEEZ",
+      "kind": "cover",
+      "path": "assets/artists/ateez/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/ATEEZ/profile.jpg?v=1780326200528"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Hongjoong",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/hongjoong.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Hongjoong/profile.jpg?v=1780240347344"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Seonghwa",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/seonghwa.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Seonghwa/profile.jpg?v=1780240372214"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Yunho",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/yunho.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yunho/profile.jpg?v=1780240411329"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Yeosang",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/yeosang.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yeosang/profile.jpg?v=1780240429703"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "San",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/san.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/San/profile.jpg?v=1780326234181"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Mingi",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/mingi.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Mingi/profile.jpg?v=1780326265959"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Wooyoung",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/wooyoung.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Wooyoung/profile.webp"
+    },
+    {
+      "artist": "ATEEZ",
+      "member": "Jongho",
+      "kind": "member",
+      "path": "assets/artists/ateez/members/jongho.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jongho/profile.jpg?v=1780326339605"
+    },
+    {
+      "artist": "xikers",
+      "kind": "cover",
+      "path": "assets/artists/xikers/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/xikers/profile.png?v=1777565039450"
+    },
+    {
+      "artist": "xikers",
+      "member": "Minjae",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/minjae.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Minjae/profile.jpg?v=1777565109406"
+    },
+    {
+      "artist": "xikers",
+      "member": "Junmin",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/junmin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Junmin/profile.jpg?v=1777563619138"
+    },
+    {
+      "artist": "xikers",
+      "member": "Sumin",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/sumin.jpg",
+      "status": "downloaded",
+      "query": "manual official/profile source",
+      "source": "https://xikers-official.jp/s3/skiyaki/uploads/artist_photo/image/26420/03_%E1%84%89%E1%85%AE%E1%84%86%E1%85%B5%E1%86%AB__SUMIN_.jpg"
+    },
+    {
+      "artist": "xikers",
+      "member": "Jinsik",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/jinsik.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jinsik/profile.jpg?v=1777563562287"
+    },
+    {
+      "artist": "xikers",
+      "member": "Hyunwoo",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/hyunwoo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Hyunwoo/profile.webp"
+    },
+    {
+      "artist": "xikers",
+      "member": "Junghoon",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/junghoon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Junghoon/profile.webp"
+    },
+    {
+      "artist": "xikers",
+      "member": "Seeun",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/seeun.jpg",
+      "status": "downloaded",
+      "query": "manual official/profile source",
+      "source": "https://xikers-official.jp/s3/skiyaki/uploads/artist_photo/image/26428/07_%E1%84%89%E1%85%A6%E1%84%8B%E1%85%B3%E1%86%AB__SEEUN_.jpg"
+    },
+    {
+      "artist": "xikers",
+      "member": "Yujun",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/yujun.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yujun/profile.jpg?v=1777563614384"
+    },
+    {
+      "artist": "xikers",
+      "member": "Hunter",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/hunter.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Hunter/profile.jpg?v=1777563640060"
+    },
+    {
+      "artist": "xikers",
+      "member": "Yechan",
+      "kind": "member",
+      "path": "assets/artists/xikers/members/yechan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yechan4/profile.jpg?v=1777563661878"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "kind": "cover",
+      "path": "assets/artists/zerobaseone/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/ZEROBASEONE/profile.jpg?v=1777582053955"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "member": "Kim Ji-woong",
+      "kind": "member",
+      "path": "assets/artists/zerobaseone/members/kim-ji-woong.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kim-Jiwoong/profile.png?v=1781967095499"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "member": "Sung Han-bin",
+      "kind": "member",
+      "path": "assets/artists/zerobaseone/members/sung-han-bin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sung-Hanbin/profile.png?v=1781478829044"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "member": "Seok Matthew",
+      "kind": "member",
+      "path": "assets/artists/zerobaseone/members/seok-matthew.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Seok-Matthew/profile.png?v=1782400749976"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "member": "Kim Tae-rae",
+      "kind": "member",
+      "path": "assets/artists/zerobaseone/members/kim-tae-rae.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kim-Tae-Rae/profile.png?v=1781478926063"
+    },
+    {
+      "artist": "ZEROBASEONE",
+      "member": "Park Gun-wook",
+      "kind": "member",
+      "path": "assets/artists/zerobaseone/members/park-gun-wook.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Park-Gun-Wook/profile.png?v=1781478786108"
+    },
+    {
+      "artist": "RIIZE",
+      "kind": "cover",
+      "path": "assets/artists/riize/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/RIIZE/profile.jpg?v=1781194205063"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Shotaro",
+      "kind": "member",
+      "path": "assets/artists/riize/members/shotaro.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Shotaro/profile.jpg?v=1781194942695"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Eunseok",
+      "kind": "member",
+      "path": "assets/artists/riize/members/eunseok.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Eunseok/profile.jpg?v=1781194951432"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Sungchan",
+      "kind": "member",
+      "path": "assets/artists/riize/members/sungchan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sungchan/profile.jpg?v=1781194973132"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Wonbin",
+      "kind": "member",
+      "path": "assets/artists/riize/members/wonbin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Wonbin/profile.webp"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Sohee",
+      "kind": "member",
+      "path": "assets/artists/riize/members/sohee.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sohee9/profile.jpg?v=1781195005630"
+    },
+    {
+      "artist": "RIIZE",
+      "member": "Anton",
+      "kind": "member",
+      "path": "assets/artists/riize/members/anton.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Anton/profile.jpg?v=1781195013298"
+    },
+    {
+      "artist": "NCT WISH",
+      "kind": "cover",
+      "path": "assets/artists/nct-wish/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/NCT-WISH/profile.png?v=1782759632059"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Sion",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/sion.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sion/profile.webp"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Riku",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/riku.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Riku/profile.jpg?v=1778274133085"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Yushi",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/yushi.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yushi/profile.png?v=1782700916036"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Jaehee",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/jaehee.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jaehee/profile.png?v=1782700924542"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Ryo",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/ryo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ryo/profile.webp"
+    },
+    {
+      "artist": "NCT WISH",
+      "member": "Sakuya",
+      "kind": "member",
+      "path": "assets/artists/nct-wish/members/sakuya.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sakuya/profile.png?v=1782700942901"
+    },
+    {
+      "artist": "NEXZ",
+      "kind": "cover",
+      "path": "assets/artists/nexz/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/NEXZ/profile.png?v=1783071063603"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Tomoya",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/tomoya.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Tomoya/profile.png?v=1783071071356"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Yu",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/yu.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yu/profile.png?v=1783071077158"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Haru",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/haru.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Haru9/profile.png?v=1783071083699"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "So Geon",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/so-geon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/So-Geon/profile.png?v=1783071090838"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Seita",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/seita.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Seita/profile.png?v=1783071096660"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Hyui",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/hyui.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Hyui/profile.png?v=1783071103015"
+    },
+    {
+      "artist": "NEXZ",
+      "member": "Yuki",
+      "kind": "member",
+      "path": "assets/artists/nexz/members/yuki.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yuki5/profile.png?v=1783071108187"
+    },
+    {
+      "artist": "KickFlip",
+      "kind": "cover",
+      "path": "assets/artists/kickflip/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/KickFlip/profile.png?v=1778771400260"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Kyehoon",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/kyehoon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kyehoon/profile.png?v=1778771318667"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Amaru",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/amaru.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Amaru/profile.png?v=1781729203100"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Donghwa",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/donghwa.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Donghwa/profile.webp"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Juwang",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/juwang.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Juwang/profile.png?v=1778773503912"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Minje",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/minje.jpg",
+      "status": "downloaded",
+      "query": "manual official/profile source",
+      "source": "https://dispatch.cdnser.be/cms-content/uploads/2025/01/06/cf45bcda-b559-4edc-bfd2-ffb419e0e8b4.jpg"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Keiju",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/keiju.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Keiju/profile.png?v=1778771376859"
+    },
+    {
+      "artist": "KickFlip",
+      "member": "Donghyeon",
+      "kind": "member",
+      "path": "assets/artists/kickflip/members/donghyeon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Donghyeon/profile.png?v=1778771384530"
+    },
+    {
+      "artist": "AxMxP",
+      "kind": "cover",
+      "path": "assets/artists/axmxp/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/AxMxP/profile.png?v=1778995896445"
+    },
+    {
+      "artist": "AxMxP",
+      "member": "Ha Yoo-joon",
+      "kind": "member",
+      "path": "assets/artists/axmxp/members/ha-yoo-joon.jpg",
+      "status": "downloaded",
+      "query": "manual official/profile source",
+      "source": "https://pic3.iqiyipic.com/image/20250604/57/1a/p_2293893512340805_m_601_600_600.jpg"
+    },
+    {
+      "artist": "AxMxP",
+      "member": "Cru",
+      "kind": "member",
+      "path": "assets/artists/axmxp/members/cru.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Cru/profile.png?v=1778201934215"
+    },
+    {
+      "artist": "AxMxP",
+      "member": "Kim Shin",
+      "kind": "member",
+      "path": "assets/artists/axmxp/members/kim-shin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kim-Shin/profile.png?v=1778201939933"
+    },
+    {
+      "artist": "AxMxP",
+      "member": "Juhwan",
+      "kind": "member",
+      "path": "assets/artists/axmxp/members/juhwan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Juhwan/profile.png?v=1778201945411"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "kind": "cover",
+      "path": "assets/artists/alpha-drive-one/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/ALPHA-DRIVE-ONE/profile.jpg?v=1778773636366"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Junseo",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/junseo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Junseo/profile.jpg?v=1778773628448"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Arno",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/arno.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Arno/profile.jpg?v=1778780379351"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Leo",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/leo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Leo/profile.webp"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Geonwoo",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/geonwoo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Geonwoo/profile.webp"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Sangwon",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/sangwon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sangwon/profile.webp?v=1781584935598"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Xinlong",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/xinlong.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Xinlong/profile.jpg?v=1778780397782"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Anxin",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/anxin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Anxin/profile.webp"
+    },
+    {
+      "artist": "ALPHA DRIVE ONE",
+      "member": "Sanghyeon",
+      "kind": "member",
+      "path": "assets/artists/alpha-drive-one/members/sanghyeon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sanghyeon/profile.webp"
+    },
+    {
+      "artist": "AND2BLE",
+      "kind": "cover",
+      "path": "assets/artists/and2ble/cover.jpg",
+      "status": "downloaded",
+      "query": "AND2BLE official group photo 2026 concept photo",
+      "source": "https://tmtn-site.com/wp-content/uploads/2026/06/and2ble.jpg"
+    },
+    {
+      "artist": "AND2BLE",
+      "member": "Zhang Hao",
+      "kind": "member",
+      "path": "assets/artists/and2ble/members/zhang-hao.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Zhang-Hao/profile.png?v=1781553396610"
+    },
+    {
+      "artist": "AND2BLE",
+      "member": "Yoo Seung-eon",
+      "kind": "member",
+      "path": "assets/artists/and2ble/members/yoo-seung-eon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yoo-Seung-Eon/profile.png?v=1781553439627"
+    },
+    {
+      "artist": "AND2BLE",
+      "member": "Ricky",
+      "kind": "member",
+      "path": "assets/artists/and2ble/members/ricky.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ricky/profile.webp"
+    },
+    {
+      "artist": "AND2BLE",
+      "member": "Kim Gyu-vin",
+      "kind": "member",
+      "path": "assets/artists/and2ble/members/kim-gyu-vin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kim-Gyu-Vin/profile.png?v=1781553511937"
+    },
+    {
+      "artist": "AND2BLE",
+      "member": "Han Yu-jin",
+      "kind": "member",
+      "path": "assets/artists/and2ble/members/han-yu-jin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Han-Yu-Jin/profile.png?v=1781553594064"
+    },
+    {
+      "artist": "KISS OF LIFE",
+      "kind": "cover",
+      "path": "assets/artists/kiss-of-life/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/KISS-OF-LIFE/profile.jpg?v=1774649566264"
+    },
+    {
+      "artist": "KISS OF LIFE",
+      "member": "Julie",
+      "kind": "member",
+      "path": "assets/artists/kiss-of-life/members/julie.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Julie/profile.webp"
+    },
+    {
+      "artist": "KISS OF LIFE",
+      "member": "Natty",
+      "kind": "member",
+      "path": "assets/artists/kiss-of-life/members/natty.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Natty/profile.jpg?v=1774673573356"
+    },
+    {
+      "artist": "KISS OF LIFE",
+      "member": "Belle",
+      "kind": "member",
+      "path": "assets/artists/kiss-of-life/members/belle.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Belle/profile.jpg?v=1774673570388"
+    },
+    {
+      "artist": "KISS OF LIFE",
+      "member": "Haneul",
+      "kind": "member",
+      "path": "assets/artists/kiss-of-life/members/haneul.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Haneul/profile.jpg?v=1774744529018"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "kind": "cover",
+      "path": "assets/artists/babymonster/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/BABYMONSTER/profile.png?v=1783022661206"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Ruka",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/ruka.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ruka/profile.webp"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Pharita",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/pharita.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Pharita/profile.jpg?v=1782900927500"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Asa",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/asa.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Asa/profile.jpg?v=1782900946748"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Ahyeon",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/ahyeon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ahyeon/profile.jpg?v=1782900974345"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Rami",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/rami.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Rami/profile.webp"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Rora",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/rora.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Rora/profile.webp"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "member": "Chiquita",
+      "kind": "member",
+      "path": "assets/artists/babymonster/members/chiquita.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Chiquita/profile.jpg?v=1782901021002"
+    },
+    {
+      "artist": "MEOVV",
+      "kind": "cover",
+      "path": "assets/artists/meovv/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/MEOVV/profile.jpg?v=1778780342141"
+    },
+    {
+      "artist": "MEOVV",
+      "member": "Sooin",
+      "kind": "member",
+      "path": "assets/artists/meovv/members/sooin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Sooin/profile.webp"
+    },
+    {
+      "artist": "MEOVV",
+      "member": "Gawon",
+      "kind": "member",
+      "path": "assets/artists/meovv/members/gawon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Gawon/profile.jpg?v=1778780526009"
+    },
+    {
+      "artist": "MEOVV",
+      "member": "Anna",
+      "kind": "member",
+      "path": "assets/artists/meovv/members/anna.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Anna/profile.webp"
+    },
+    {
+      "artist": "MEOVV",
+      "member": "Narin",
+      "kind": "member",
+      "path": "assets/artists/meovv/members/narin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Narin/profile.webp"
+    },
+    {
+      "artist": "MEOVV",
+      "member": "Ella",
+      "kind": "member",
+      "path": "assets/artists/meovv/members/ella.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ella/profile.webp"
+    },
+    {
+      "artist": "izna",
+      "kind": "cover",
+      "path": "assets/artists/izna/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/izna/profile.jpg?v=1779208878683"
+    },
+    {
+      "artist": "izna",
+      "member": "Mai",
+      "kind": "member",
+      "path": "assets/artists/izna/members/mai.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Mai/profile.jpg?v=1779208989905"
+    },
+    {
+      "artist": "izna",
+      "member": "Bang Jee-min",
+      "kind": "member",
+      "path": "assets/artists/izna/members/bang-jee-min.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Bang-Jeemin/profile.jpg?v=1779209090645"
+    },
+    {
+      "artist": "izna",
+      "member": "Koko",
+      "kind": "member",
+      "path": "assets/artists/izna/members/koko.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Koko/profile.jpg?v=1779209175823"
+    },
+    {
+      "artist": "izna",
+      "member": "Ryu Sa-rang",
+      "kind": "member",
+      "path": "assets/artists/izna/members/ryu-sa-rang.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ryu-Sarang/profile.jpg?v=1779209248012"
+    },
+    {
+      "artist": "izna",
+      "member": "Choi Jung-eun",
+      "kind": "member",
+      "path": "assets/artists/izna/members/choi-jung-eun.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Choi-Jungeun/profile.jpg?v=1779209316542"
+    },
+    {
+      "artist": "izna",
+      "member": "Jeong Sae-bi",
+      "kind": "member",
+      "path": "assets/artists/izna/members/jeong-sae-bi.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jeong-Saebi/profile.jpg?v=1779209395990"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "kind": "cover",
+      "path": "assets/artists/hearts2hearts/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/Hearts2Hearts/profile.png?v=1782117174446"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Carmen",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/carmen.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Carmen/profile.jpg?v=1782117341747"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Jiwoo",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/jiwoo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jiwoo/profile.png?v=1783358585657"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Yuha",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/yuha.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yuha/profile.jpg?v=1782117432081"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Stella",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/stella.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Stella/profile.jpg?v=1782117498064"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Juun",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/juun.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Juun/profile.jpg?v=1782117562948"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "A-na",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/a-na.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/A-na/profile.jpg?v=1782117642184"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Ian",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/ian.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ian/profile.webp"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "member": "Ye-on",
+      "kind": "member",
+      "path": "assets/artists/hearts2hearts/members/ye-on.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Ye-on/profile.jpg?v=1782117303700"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "kind": "cover",
+      "path": "assets/artists/allday-project/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/ALLDAY-PROJECT/profile.png?v=1779568550001"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "member": "Annie",
+      "kind": "member",
+      "path": "assets/artists/allday-project/members/annie.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Annie/profile.webp"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "member": "Tarzzan",
+      "kind": "member",
+      "path": "assets/artists/allday-project/members/tarzzan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Tarzzan/profile.png?v=1779569094119"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "member": "Bailey",
+      "kind": "member",
+      "path": "assets/artists/allday-project/members/bailey.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Bailey/profile.png?v=1779568807008"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "member": "Woochan",
+      "kind": "member",
+      "path": "assets/artists/allday-project/members/woochan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Woochan/profile.png?v=1779568845734"
+    },
+    {
+      "artist": "ALLDAY PROJECT",
+      "member": "Youngseo",
+      "kind": "member",
+      "path": "assets/artists/allday-project/members/youngseo.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Youngseo/profile.png?v=1779568886840"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "kind": "cover",
+      "path": "assets/artists/baby-dont-cry/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/Baby-DONT-Cry/profile.jpg?v=1780102406434"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "member": "Yihyun",
+      "kind": "member",
+      "path": "assets/artists/baby-dont-cry/members/yihyun.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Yihyun/profile.jpg?v=1773915266794"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "member": "Kumi",
+      "kind": "member",
+      "path": "assets/artists/baby-dont-cry/members/kumi.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kumi/profile.jpg?v=1773870258063"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "member": "Mia",
+      "kind": "member",
+      "path": "assets/artists/baby-dont-cry/members/mia.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Mia/profile.webp"
+    },
+    {
+      "artist": "Baby DONT Cry",
+      "member": "Beni",
+      "kind": "member",
+      "path": "assets/artists/baby-dont-cry/members/beni.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Beni/profile.jpg?v=1773870591410"
+    },
+    {
+      "artist": "IDID",
+      "kind": "cover",
+      "path": "assets/artists/idid/cover.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/groups/IDID/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Jang Yong-hoon",
+      "kind": "member",
+      "path": "assets/artists/idid/members/jang-yong-hoon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jang-Yong-Hoon/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Kim Min-jae",
+      "kind": "member",
+      "path": "assets/artists/idid/members/kim-min-jae.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Kim-Min-Jae/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Park Won-bin",
+      "kind": "member",
+      "path": "assets/artists/idid/members/park-won-bin.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Park-Won-Bin/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Chu Yoo-chan",
+      "kind": "member",
+      "path": "assets/artists/idid/members/chu-yoo-chan.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Chu-Yoo-Chan/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Park Seong-hyeon",
+      "kind": "member",
+      "path": "assets/artists/idid/members/park-seong-hyeon.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Park-Seong-Hyeon/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Baek Jun-hyuk",
+      "kind": "member",
+      "path": "assets/artists/idid/members/baek-jun-hyuk.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Baek-Jun-Hyuk/profile.webp"
+    },
+    {
+      "artist": "IDID",
+      "member": "Jeong Se-min",
+      "kind": "member",
+      "path": "assets/artists/idid/members/jeong-se-min.jpg",
+      "status": "downloaded",
+      "query": "kpopping profile",
+      "source": "https://cdn.kpopping.com/idols/Jeong-Se-Min/profile.webp"
+    }
+  ]
+}
