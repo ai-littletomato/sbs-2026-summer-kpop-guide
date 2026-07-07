@@ -1,15 +1,15 @@
-# SBS 2026 Summer K-Pop Guide
+# SBS 2026 Summer Lineup
 
-一个面向 K-Pop 入门观众的静态宣传介绍页，用于预习 2026 年 8 月 9 日 SBS 歌谣大战 Summer KINTEX 场。
+2026 年 8 月 9 日 SBS 歌谣大战 Summer KINTEX 场静态宣传资料页。
 
 ## 内容结构
 
 - Banner：使用用户提供的海报作为主视觉。
 - 活动介绍：活动、地点、阵容结构、观看建议。
 - 阵容 Tab：个人/乐队、男团、女团三类，响应式宫格。
-- 艺人资料页：简介、成员、推荐 MV/舞台入口。
+- 艺人资料页：简介、成员卡片、官方 MV/舞台直达卡片。
 - 历年阵容对比：从 2024 Summer 到 2026 Summer。
-- 2026 Winter 预测：按概率分层，明确标注为推测。
+- 素材位：支持本地团体封面和成员图替换。
 
 ## 本地打开
 
@@ -27,8 +27,28 @@ python3 -m http.server 8000
 http://localhost:8000
 ```
 
+## 图片素材放置
+
+团体/个人封面：
+
+```text
+assets/artists/{artist-id}/cover.jpg
+```
+
+成员图：
+
+```text
+assets/artists/{artist-id}/members/{member-slug}.jpg
+```
+
+更多例子见：
+
+```text
+assets/artists/README.md
+```
+
 ## 可继续补充的地方
 
-- 将资料页里的 YouTube 搜索入口替换为具体官方 MV 链接。
-- 将视觉卡片替换为授权的艺人官方宣传照/团体照。
+- 替换为授权的艺人官方宣传照/团体照。
+- 给每个艺人补 2-4 条官方 MV、现场舞台或 fancam。
 - 演出前再次核对 SBS 官方节目页、票务页、KINTEX 交通公告和艺人行程。

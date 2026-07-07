@@ -7,6 +7,49 @@ const palette = [
   ["#4aa7ff", "#d8ff35"],
 ];
 
+const memberNameMap = {
+  "Sung Han-bin": "成韩彬",
+  "Kim Ji-woong": "金地雄",
+  "Seok Matthew": "石马修",
+  "Kim Tae-rae": "金泰来",
+  "Park Gun-wook": "朴乾旭",
+  "Zhang Hao": "章昊",
+  "Ricky": "RICKY",
+  "Kim Gyu-vin": "金奎彬",
+  "Han Yu-jin": "韩维辰",
+  "Yoo Seung-eon": "刘昇彦",
+};
+
+function localCover(id) {
+  return `assets/artists/${id}/cover.jpg`;
+}
+
+function localMemberImage(artistId, member) {
+  return `assets/artists/${artistId}/members/${slugify(member)}.jpg`;
+}
+
+function slugify(value) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function makeMembers(artistId, names) {
+  return names.map((name) => ({
+    name,
+    cn: memberNameMap[name] || "",
+    image: localMemberImage(artistId, name),
+  }));
+}
+
+function yt(videoId) {
+  return {
+    url: `https://www.youtube.com/watch?v=${videoId}`,
+    thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+  };
+}
+
 const artists = [
   {
     id: "picheolin",
@@ -15,10 +58,10 @@ const artists = [
     type: "solo",
     rank: 1,
     agency: "SEVENTEEN Dino alter ego",
-    hook: "SEVENTEEN 成员 Dino 的角色企划，适合作为开场梗和综艺感入口。",
+    hook: "SEVENTEEN Dino 的角色型舞台企划，综艺感和表演反差是重点。",
     intro:
-      "Picheolin 是 SEVENTEEN Dino 延伸出的角色型企划，通常带有表演者人格、幽默感和舞台反差。对新观众来说，可以先把他理解成“偶像成员的特别人格舞台”。",
-    members: ["Dino"],
+      "Picheolin 来自 SEVENTEEN 成员 Dino 的角色企划，常以夸张人设和舞台反差制造记忆点。它不是传统 solo 档案，更接近大型舞台里的特别角色卡。",
+    members: makeMembers("picheolin", ["Dino"]),
     media: ["Picheolin official stage", "SEVENTEEN Dino dance performance"],
   },
   {
@@ -31,7 +74,7 @@ const artists = [
     hook: "DAY6 主唱键盘手，擅长清亮抒情与乐队情绪线。",
     intro:
       "Wonpil 是 DAY6 的成员之一，solo 作品偏抒情和细腻叙事。拼盘里他的价值在于让整场不只有强舞曲，也有能让观众坐下来听旋律的段落。",
-    members: ["Wonpil"],
+    members: makeMembers("wonpil", ["Wonpil"]),
     media: ["Wonpil solo MV", "DAY6 live performance"],
   },
   {
@@ -44,7 +87,7 @@ const artists = [
     hook: "NCT 成员兼 solo 歌手，rap、舞蹈和视觉概念都很强。",
     intro:
       "TAEYONG 是 NCT 成员，也是 SM 男 solo 中个人风格非常鲜明的一位。作品常带实验电子、hip-hop 和强视觉概念，适合关注舞台动作质感与个人表达的观众。",
-    members: ["TAEYONG"],
+    members: makeMembers("taeyong", ["TAEYONG"]),
     media: ["TAEYONG latest MV", "TAEYONG TAP official MV", "TAEYONG SHALALA official MV"],
   },
   {
@@ -57,7 +100,7 @@ const artists = [
     hook: "舞蹈型 solo，线条、律动和视觉概念都很鲜明。",
     intro:
       "TEN 是 NCT/WayV 成员，solo 舞台强调身体控制、时装感和偏暗色的流行编舞。适合关注舞台完成度、镜头表现和个人风格的观众。",
-    members: ["TEN"],
+    members: makeMembers("ten", ["TEN"]),
     media: ["TEN latest MV", "TEN Nightwalker official MV", "TEN dance performance"],
   },
   {
@@ -70,7 +113,7 @@ const artists = [
     hook: "清新女声代表，旋律轻盈，适合夏天场的中段换气。",
     intro:
       "BOL4 以清新、轻快、带一点少女叙事感的歌曲出圈。对于第一次看拼盘的人，她能提供和大编舞男团女团完全不同的听感。",
-    members: ["Ahn Ji-young"],
+    members: makeMembers("bol4", ["Ahn Ji-young"]),
     media: ["BOL4 latest MV", "BOL4 Some official MV"],
   },
   {
@@ -83,7 +126,7 @@ const artists = [
     hook: "R&B、hip-hop、另类流行之间自由切换，舞台气质很强。",
     intro:
       "BIBI 的作品常带电影感和坏女孩叙事，唱腔、造型、表达都很有个人标签。她在拼盘里通常承担“风格转换器”的角色。",
-    members: ["BIBI"],
+    members: makeMembers("bibi", ["BIBI"]),
     media: ["BIBI latest MV", "BIBI Bam Yang Gang official MV", "BIBI live stage"],
   },
   {
@@ -96,7 +139,7 @@ const artists = [
     hook: "明亮能量型女 solo，综艺感和舞台亲和力都高。",
     intro:
       "Choi Yena 以活泼、明快、漫画感的 pop-rock/舞曲路线被熟悉。她的舞台适合不熟 K-Pop 的观众快速建立好感。",
-    members: ["YENA"],
+    members: makeMembers("yena", ["YENA"]),
     media: ["YENA latest MV", "YENA Smiley official MV"],
   },
   {
@@ -105,11 +148,11 @@ const artists = [
     korean: "에반",
     type: "solo",
     rank: 8,
-    agency: "Rookie solo",
-    hook: "海报尾段新人位，适合关注潜力股。",
+    agency: "BELIFT LAB",
+    hook: "Heeseung 的 solo 名义，主唱底子和舞台脸都很有辨识度。",
     intro:
-      "EVAN 在本页暂按新人 solo/特别出席位处理。正式上线前建议用 SBS 官方节目页或所属社资料补齐完整履历。",
-    members: ["EVAN"],
+      "EVAN 是 Lee Hee-seung 使用的 solo 艺名。公开资料显示他从 ENHYPEN 活动后转入个人阶段，声线、舞台中心感和高音表现是最容易被记住的部分。",
+    members: makeMembers("evan", ["EVAN"]),
     media: ["EVAN official stage", "EVAN profile video"],
   },
   {
@@ -121,8 +164,8 @@ const artists = [
     agency: "JYP",
     hook: "全球巡演级男团，强节奏、自制作和爆发型舞台是核心看点。",
     intro:
-      "Stray Kids 以 3RACHA 自作体系、重低音编曲和高能群舞闻名。对新观众来说，他们是理解近年 K-Pop 男团“制作人化”和全球化的代表入口。",
-    members: ["Bang Chan", "Lee Know", "Changbin", "Hyunjin", "Han", "Felix", "Seungmin", "I.N"],
+      "Stray Kids 以 3RACHA 自作体系、重低音编曲和高能群舞闻名，是理解近年 K-Pop 男团“制作人化”和全球化的高浓度样本。",
+    members: makeMembers("stray-kids", ["Bang Chan", "Lee Know", "Changbin", "Hyunjin", "Han", "Felix", "Seungmin", "I.N"]),
     media: ["Stray Kids latest MV", "Stray Kids Chk Chk Boom official MV", "Stray Kids God's Menu MV"],
   },
   {
@@ -135,7 +178,7 @@ const artists = [
     hook: "强表情管理和叙事型舞台，现场感染力常被夸。",
     intro:
       "ATEEZ 的舞台语言很戏剧化，常用海盗、反乌托邦、狂欢等概念放大表演张力。适合看大场面、看成员眼神和队形变化。",
-    members: ["Hongjoong", "Seonghwa", "Yunho", "Yeosang", "San", "Mingi", "Wooyoung", "Jongho"],
+    members: makeMembers("ateez", ["Hongjoong", "Seonghwa", "Yunho", "Yeosang", "San", "Mingi", "Wooyoung", "Jongho"]),
     media: ["ATEEZ latest MV", "ATEEZ Crazy Form official MV", "ATEEZ live stage"],
   },
   {
@@ -148,7 +191,7 @@ const artists = [
     hook: "ATEEZ 师弟团，高能、年轻、舞台密度高。",
     intro:
       "xikers 延续 KQ 对男团舞台能量的偏好，音乐更强调年轻、冲撞和速度感。拼盘里适合观察新一代男团的体能和群舞调度。",
-    members: ["Minjae", "Junmin", "Sumin", "Jinsik", "Hyunwoo", "Junghoon", "Seeun", "Yujun", "Hunter", "Yechan"],
+    members: makeMembers("xikers", ["Minjae", "Junmin", "Sumin", "Jinsik", "Hyunwoo", "Junghoon", "Seeun", "Yujun", "Hunter", "Yechan"]),
     media: ["xikers latest MV", "xikers TRICKY HOUSE official MV"],
   },
   {
@@ -158,10 +201,10 @@ const artists = [
     type: "boy",
     rank: 4,
     agency: "WAKEONE",
-    hook: "选秀系高人气限定团，粉丝动员和舞台清爽度都强。",
+    hook: "《Boys Planet》出身的 5 人体制男团，清爽感和粉丝动员依旧强。",
     intro:
-      "ZEROBASEONE 由《Boys Planet》诞生，成员人气和舞台训练基础都很强。风格偏清爽、明亮、青春，也能做更锋利的舞曲。",
-    members: ["Sung Han-bin", "Kim Ji-woong", "Zhang Hao", "Seok Matthew", "Kim Tae-rae", "Ricky", "Kim Gyu-vin", "Park Gun-wook", "Han Yu-jin"],
+      "ZEROBASEONE 由《Boys Planet》诞生，2026 年转为金地雄、成韩彬、石马修、金泰来、朴乾旭 5 人体制。现在的看点从“限定团全员人气”转向更紧凑的 vocal、表演和团队重塑。",
+    members: makeMembers("zerobaseone", ["Kim Ji-woong", "Sung Han-bin", "Seok Matthew", "Kim Tae-rae", "Park Gun-wook"]),
     media: ["ZEROBASEONE latest MV", "ZEROBASEONE In Bloom official MV"],
   },
   {
@@ -174,7 +217,7 @@ const artists = [
     hook: "SM 新世代男团代表，主打青春、成长和舞蹈 groove。",
     intro:
       "RIIZE 的关键词是 real-time odyssey，强调成员成长过程和时髦的流行舞曲。新观众可先看《Get A Guitar》《Boom Boom Bass》理解他们的轻快路线。",
-    members: ["Shotaro", "Eunseok", "Sungchan", "Wonbin", "Sohee", "Anton"],
+    members: makeMembers("riize", ["Shotaro", "Eunseok", "Sungchan", "Wonbin", "Sohee", "Anton"]),
     media: ["RIIZE latest MV", "RIIZE Get A Guitar official MV", "RIIZE Boom Boom Bass MV"],
   },
   {
@@ -187,7 +230,7 @@ const artists = [
     hook: "NCT 日本/新世代分队，清爽少年感与 SM 编舞质感并存。",
     intro:
       "NCT WISH 是 NCT 的年轻分队，定位更明亮、清新。适合关注 SM 如何把 NCT 的体系延伸到更年轻的市场。",
-    members: ["Sion", "Riku", "Yushi", "Jaehee", "Ryo", "Sakuya"],
+    members: makeMembers("nct-wish", ["Sion", "Riku", "Yushi", "Jaehee", "Ryo", "Sakuya"]),
     media: ["NCT WISH latest MV", "NCT WISH WISH official MV"],
   },
   {
@@ -200,7 +243,7 @@ const artists = [
     hook: "JYP 日韩男团新势力，主打年轻、速度和清爽表现。",
     intro:
       "NEXZ 通过 JYP 的选拔体系出道，面向日韩与全球市场。舞台通常强调整齐度、年轻感和公司训练风格。",
-    members: ["Tomoya", "Yu", "Haru", "So Geon", "Seita", "Hyui", "Yuki"],
+    members: makeMembers("nexz", ["Tomoya", "Yu", "Haru", "So Geon", "Seita", "Hyui", "Yuki"]),
     media: ["NEXZ latest MV", "NEXZ Ride the Vibe official MV"],
   },
   {
@@ -213,7 +256,7 @@ const artists = [
     hook: "JYP 新人男团位，名字自带滑板和街头运动感。",
     intro:
       "KickFlip 是 JYP 新人男团企划，拼盘出席意味着公司希望在大型舞台上尽快建立大众认知。适合关注新人出道期的舞台完成度。",
-    members: ["Kyehoon", "Amaru", "Donghwa", "Juwang", "Minje", "Keiju", "Donghyeon"],
+    members: makeMembers("kickflip", ["Kyehoon", "Amaru", "Donghwa", "Juwang", "Minje", "Keiju", "Donghyeon"]),
     media: ["KickFlip latest MV", "KickFlip official performance"],
   },
   {
@@ -222,11 +265,11 @@ const artists = [
     korean: "에이엠피",
     type: "boy",
     rank: 9,
-    agency: "Rookie band",
-    hook: "新人乐队/团体位，适合补充非典型舞曲的舞台口味。",
+    agency: "FNC",
+    hook: "FNC 四人 band 型新人，摇滚、K-pop 和 hip-hop 混在一起。",
     intro:
-      "AxMxP 在当前资料中更接近新人企划位。资料页保留为可更新结构，上线前可补充成员、公司、出道作品和官方频道。",
-    members: ["Ha Yu-joon", "Kim Shin", "Joo Hwan", "Crux"],
+      "AxMxP 是 FNC 推出的四人男团/乐队企划，成员配置覆盖主唱、鼓、贝斯等 band 结构。相比纯舞团，他们更像把偶像舞台和乐队现场揉在一起。",
+    members: makeMembers("axmxp", ["Ha Yoo-joon", "Cru", "Kim Shin", "Juhwan"]),
     media: ["AxMxP official stage", "AxMxP profile film"],
   },
   {
@@ -235,11 +278,11 @@ const artists = [
     korean: "알파드라이브원",
     type: "boy",
     rank: 10,
-    agency: "Rookie project",
-    hook: "新人/项目团位置，预测会承担发现感。",
+    agency: "WAKEONE",
+    hook: "《Boys II Planet》出身 8 人男团，2026 年出道的新世代大项目。",
     intro:
-      "ALPHA DRIVE ONE 属于本次海报中新面孔含量很高的艺人之一。建议把它放在“提前认识潜力股”而非“已完全大众化”的观看区。",
-    members: ["Profile pending"],
+      "ALPHA DRIVE ONE 由《Boys II Planet》诞生，成员来自选秀节目最终阵容。团名和视觉都走速度、推进、未来感路线，是 WAKEONE 在 2026 年重点押注的新男团。",
+    members: makeMembers("alpha-drive-one", ["Junseo", "Arno", "Leo", "Geonwoo", "Sangwon", "Xinlong", "Anxin", "Sanghyeon"]),
     media: ["ALPHA DRIVE ONE official video", "ALPHA DRIVE ONE stage"],
   },
   {
@@ -248,11 +291,11 @@ const artists = [
     korean: "앤더블",
     type: "boy",
     rank: 11,
-    agency: "Rookie project",
-    hook: "新人男团/项目团位，适合后续补官方物料。",
+    agency: "YH",
+    hook: "章昊、RICKY、金奎彬、韩维辰再出发，叠加刘昇彦的 5 人新团。",
     intro:
-      "AND2BLE 当前更适合在资料站中作为待补充新人档案处理。用户可以在演出前通过官方账号确认成员构成和代表作品。",
-    members: ["Profile pending"],
+      "AND2BLE 是 YH 在 2026 年推出的五人男团，包含前 ZEROBASEONE 成员章昊、RICKY、金奎彬、韩维辰，以及前 EVNNE 成员刘昇彦。天然自带选秀粉丝盘，舞台会很吃成员辨识度。",
+    members: makeMembers("and2ble", ["Zhang Hao", "Yoo Seung-eon", "Ricky", "Kim Gyu-vin", "Han Yu-jin"]),
     media: ["AND2BLE official video", "AND2BLE profile"],
   },
   {
@@ -265,7 +308,7 @@ const artists = [
     hook: "四人女团，擅长 R&B、复古流行和强个人色彩。",
     intro:
       "KISS OF LIFE 以成员个人魅力、成熟声线和复古/性感路线获得关注。新观众可先看《Midas Touch》《Sticky》理解她们的夏季适配度。",
-    members: ["Julie", "Natty", "Belle", "Haneul"],
+    members: makeMembers("kiss-of-life", ["Julie", "Natty", "Belle", "Haneul"]),
     media: ["KISS OF LIFE latest MV", "KISS OF LIFE Midas Touch official MV", "KISS OF LIFE Sticky MV"],
   },
   {
@@ -278,7 +321,7 @@ const artists = [
     hook: "YG 新世代女团，唱跳 rap 综合能力和海外关注度都高。",
     intro:
       "BABYMONSTER 承接 YG 女团的强 vocal、rap 和舞台存在感路线。适合看大公司新人如何在高压舞台上抢镜。",
-    members: ["Ruka", "Pharita", "Asa", "Ahyeon", "Rami", "Rora", "Chiquita"],
+    members: makeMembers("babymonster", ["Ruka", "Pharita", "Asa", "Ahyeon", "Rami", "Rora", "Chiquita"]),
     media: ["BABYMONSTER latest MV", "BABYMONSTER SHEESH official MV", "BABYMONSTER live stage"],
   },
   {
@@ -291,7 +334,7 @@ const artists = [
     hook: "THEBLACKLABEL 女团，时装感和神秘感是记忆点。",
     intro:
       "MEOVV 的关注点在于 THEBLACKLABEL 的制作与视觉体系。她们适合被放在“潮流感、镜头感、新人曝光”的观察维度里。",
-    members: ["Sooin", "Gawon", "Anna", "Narin", "Ella"],
+    members: makeMembers("meovv", ["Sooin", "Gawon", "Anna", "Narin", "Ella"]),
     media: ["MEOVV latest MV", "MEOVV official performance"],
   },
   {
@@ -301,10 +344,10 @@ const artists = [
     type: "girl",
     rank: 4,
     agency: "WAKEONE",
-    hook: "选秀出身新女团，粉丝基础和成长叙事明显。",
+    hook: "《I-LAND 2》出身女团，2025 年经历阵容变化后进入 6 人体制。",
     intro:
-      "izna 由选秀节目体系延伸而来，适合关注新人女团的成员认知、舞台成长和粉丝动员。",
-    members: ["Mai", "Jeemin", "Jiyoon", "Koko", "Sarang", "Jungeun", "Saebi"],
+      "izna 由《I-LAND 2》诞生，2025 年 Yoon Ji-yoon 离队后以 Mai、Bang Jee-min、Koko、Ryu Sa-rang、Choi Jung-eun、Jeong Sae-bi 6 人活动。风格更强调自信、锋利和 Gen Z 气质。",
+    members: makeMembers("izna", ["Mai", "Bang Jee-min", "Koko", "Ryu Sa-rang", "Choi Jung-eun", "Jeong Sae-bi"]),
     media: ["izna latest MV", "izna official stage"],
   },
   {
@@ -314,10 +357,10 @@ const artists = [
     type: "girl",
     rank: 5,
     agency: "SM",
-    hook: "SM 新人女团，适合观察公司审美新方向。",
+    hook: "SM 八人新人女团，明亮、甜感和一点点怪趣味是记忆点。",
     intro:
-      "Hearts2Hearts 是 SM 新世代女团企划，本次出席会让她们在大量新人中拥有较高可见度。适合重点看视觉概念、编舞队形和成员辨识度。",
-    members: ["Carmen", "Jiwoo", "Yuha", "Stella", "Juuna", "A-na", "Ian", "Ye-on"],
+      "Hearts2Hearts 是 SM 2025 年推出的八人女团，成员配置年轻，视觉和音乐都偏高饱和青春感。她们的优势不是压迫感，而是把清亮旋律、甜味 hook 和整齐队形做得很顺。",
+    members: makeMembers("hearts2hearts", ["Carmen", "Jiwoo", "Yuha", "Stella", "Juun", "A-na", "Ian", "Ye-on"]),
     media: ["Hearts2Hearts latest MV", "Hearts2Hearts official performance"],
   },
   {
@@ -327,10 +370,10 @@ const artists = [
     type: "girl",
     rank: 6,
     agency: "THEBLACKLABEL",
-    hook: "话题型新人项目，适合看概念包装和跨圈传播。",
+    hook: "THEBLACKLABEL 五人混声团，成员背景和时装感自带话题。",
     intro:
       "ALLDAY PROJECT 在本页按新人项目团处理，核心看点是公司资源、成员话题和首波作品是否能快速破圈。",
-    members: ["Annie", "Tarzzan", "Bailey", "Woochan", "Youngseo"],
+    members: makeMembers("allday-project", ["Annie", "Tarzzan", "Bailey", "Woochan", "Youngseo"]),
     media: ["ALLDAY PROJECT latest MV", "ALLDAY PROJECT official video"],
   },
   {
@@ -339,24 +382,24 @@ const artists = [
     korean: "베이비 돈 크라이",
     type: "girl",
     rank: 7,
-    agency: "Rookie project",
-    hook: "新人女团/项目团位，适合做演前预习。",
+    agency: "P NATION",
+    hook: "P NATION 四人女团，Soyeon 制作线加持，名字和概念都很抓眼。",
     intro:
-      "Baby DONT Cry 当前公开认知仍偏新人，资料站先保留可扩展档案。建议演出前关注官方账号更新成员照和出道作品。",
-    members: ["Profile pending"],
+      "Baby DONT Cry 是 P NATION 的四人女团，成员为 Yihyun、Kumi、Mia、Beni。出道期就带着强烈话题和清晰制作标签，舞台走少女感与叛逆感并存的路线。",
+    members: makeMembers("baby-dont-cry", ["Yihyun", "Kumi", "Mia", "Beni"]),
     media: ["Baby DONT Cry official video", "Baby DONT Cry profile"],
   },
   {
     id: "idid",
     name: "IDID",
     korean: "아이딧",
-    type: "girl",
-    rank: 8,
-    agency: "Rookie project",
-    hook: "海报尾段新人位，适合发现未来上升组合。",
+    type: "boy",
+    rank: 12,
+    agency: "Starship",
+    hook: "Starship 七人男团，生存节目出身，名字就带着“I did it”的冲劲。",
     intro:
-      "IDID 在本页归为新人女团/项目团。由于资料会随出道期快速更新，建议用官方渠道替换成员信息和作品入口。",
-    members: ["Profile pending"],
+      "IDID 由 Starship 生存节目《Debut's Plan》推出，2025 年以七人阵容出道。当前成员为 Jang Yong-hoon、Kim Min-jae、Park Won-bin、Chu Yoo-chan、Park Seong-hyeon、Baek Jun-hyuk、Jeong Se-min。",
+    members: makeMembers("idid", ["Jang Yong-hoon", "Kim Min-jae", "Park Won-bin", "Chu Yoo-chan", "Park Seong-hyeon", "Baek Jun-hyuk", "Jeong Se-min"]),
     media: ["IDID official video", "IDID profile"],
   },
 ];
@@ -365,7 +408,7 @@ const history = [
   {
     title: "2024 Summer",
     date: "2024.07.21 · Inspire Arena",
-    artists: ["NCT 127", "Stray Kids", "ITZY", "TXT", "ENHYPEN", "aespa", "IVE", "LE SSERAFIM", "NewJeans", "NMIXX", "STAYC", "ZEROBASEONE"],
+    artists: ["Cravity", "Enhypen", "(G)I-DLE", "Illit", "Ive", "Jannabi", "Kiss of Life", "Le Sserafim", "Lee Young-ji", "NCT 127", "NCT Wish", "NewJeans", "Nmixx", "ONF", "STAYC", "Stray Kids", "TXT", "Wooah", "Xikers", "Zerobaseone"],
   },
   {
     title: "2024 Winter",
@@ -375,12 +418,12 @@ const history = [
   {
     title: "2025 Summer",
     date: "2025.07.26-27 · KINTEX",
-    artists: ["NCT DREAM", "IVE", "NMIXX", "ENHYPEN", "aespa", "ATEEZ", "ITZY", "LE SSERAFIM", "TWS", "ILLIT", "BABYMONSTER", "KISS OF LIFE"],
+    artists: ["AHOF", "AllDay Project", "Be First", "Doyoung", "Ive", "Itzy", "Izna", "Jannabi", "Meovv", "NCT 127", "NCT Wish", "Nmixx", "Paul Kim", "Uspeer", "Xikers", "Baby Dont Cry", "Babymonster", "Close Your Eyes", "Enhypen", "Hearts2Hearts", "Hitgs", "I-dle", "Idid", "Illit", "KickFlip", "KiiiKiii", "Mark", "NCT Dream", "STAYC", "TXT", "Woodz"],
   },
   {
     title: "2025 Winter",
-    date: "2025.12.25 · 年末场",
-    artists: ["NCT 127", "NCT DREAM", "Stray Kids", "ATEEZ", "TXT", "ENHYPEN", "aespa", "IVE", "LE SSERAFIM", "RIIZE", "ZEROBASEONE", "BABYMONSTER"],
+    date: "2025.12.25 · Inspire Arena",
+    artists: ["&Team", "Aespa", "AHOF", "AllDay Project", "Ateez", "AxMxP", "Baby Dont Cry", "Babymonster", "BoyNextDoor", "Cortis", "Enhypen", "Hearts2Hearts", "Hitgs", "Idid", "Illit", "Itzy", "Ive", "Izna", "KickFlip", "KiiiKiii", "Le Sserafim", "Meovv", "NCT Dream", "NCT Wish", "Nexz", "Nmixx", "Riize", "Skinz", "Stray Kids", "Taeyong", "The Boyz", "TXT", "Treasure", "TWS", "U-Know Yunho", "Zerobaseone"],
   },
   {
     title: "2026 Summer",
@@ -389,29 +432,39 @@ const history = [
   },
 ];
 
-const predictions = [
-  {
-    tier: "高概率",
-    note: "年末台常客或 2026 热度强",
-    names: ["Stray Kids", "NCT DREAM", "RIIZE", "ZEROBASEONE", "BABYMONSTER", "IVE", "aespa", "LE SSERAFIM", "NMIXX"],
-  },
-  {
-    tier: "中高概率",
-    note: "若无巡演撞期，适合补齐舞台结构",
-    names: ["ATEEZ", "ENHYPEN", "TXT", "KISS OF LIFE", "NCT WISH", "TWS", "ILLIT", "MEOVV", "Hearts2Hearts"],
-  },
-  {
-    tier: "观察位",
-    note: "新人曝光、公司推新或特别合作",
-    names: ["ALLDAY PROJECT", "KickFlip", "NEXZ", "izna", "xikers", "IDID", "ALPHA DRIVE ONE", "BIBI", "TAEYONG"],
-  },
-];
+const mediaByArtist = {
+  wonpil: [{ title: "A journey", type: "Official MV", year: "2022", channel: "JYP Entertainment", ...yt("5gR8kqgv9oc") }],
+  taeyong: [{ title: "TAP", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("vjGIY_GyAz4") }],
+  ten: [{ title: "Nightwalker", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("ri6FaIavnWA") }],
+  bol4: [{ title: "Lips", type: "Official MV", year: "2024", channel: "BOL4", ...yt("TOy0BL_HrO8") }],
+  bibi: [{ title: "Bam Yang Gang", type: "Official MV", year: "2024", channel: "BIBI", ...yt("smdmEhkIRVc") }],
+  yena: [{ title: "SMILEY", type: "Official MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") }],
+  "stray-kids": [{ title: "Chk Chk Boom", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("0P0aQreFs8w") }],
+  ateez: [{ title: "Ice On My Teeth", type: "Official MV", year: "2024", channel: "KQ Entertainment", ...yt("5OflOlcHLb8") }],
+  xikers: [{ title: "BREATHE", type: "Official MV", year: "2025", channel: "KQ Entertainment", ...yt("aUMr0Oi1I-E") }],
+  zerobaseone: [{ title: "Running to Future", type: "Official MV", year: "2026", channel: "ZEROBASEONE", ...yt("v5_GoNFr5wc") }],
+  riize: [{ title: "Boom Boom Bass", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("78lNnCitcBM") }],
+  "nct-wish": [{ title: "poppop", type: "Official MV", year: "2025", channel: "SMTOWN", ...yt("LNETckymbzk") }],
+  nexz: [{ title: "Ride the Vibe", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("8SrSOZUuw8Q") }],
+  kickflip: [{ title: "Twenty", type: "Official MV", year: "2026", channel: "JYP Entertainment", ...yt("Gt0wRAFpwvg") }],
+  axmxp: [{ title: "I Did It", type: "Official MV", year: "2025", channel: "FNC Entertainment", ...yt("p1vNN9UzVvI") }],
+  "alpha-drive-one": [{ title: "Freak Alarm", type: "Official MV", year: "2026", channel: "WAKEONE", ...yt("P8VVnopM610") }],
+  and2ble: [{ title: "Curiosity", type: "Official MV", year: "2026", channel: "AND2BLE", ...yt("m6kmpiOsLVk") }],
+  "kiss-of-life": [{ title: "Sticky", type: "Official MV", year: "2024", channel: "KISS OF LIFE", ...yt("IajeQM00yfE") }],
+  babymonster: [{ title: "SHEESH", type: "Official MV", year: "2024", channel: "BABYMONSTER", ...yt("2wA_b6YHjqQ") }],
+  meovv: [{ title: "HANDS UP", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("sL0pCS6K9bc") }],
+  izna: [{ title: "Not Just Pretty", type: "Official MV", year: "2025", channel: "izna", ...yt("2fyFx2u5fbU") }],
+  hearts2hearts: [{ title: "Rude!", type: "Official MV", year: "2026", channel: "SMTOWN", ...yt("F7sGJVUrkjQ") }],
+  "allday-project": [{ title: "FAMOUS", type: "Official MV", year: "2025", channel: "THEBLACKLABEL", ...yt("VjvzYjU1mY0") }],
+  "baby-dont-cry": [{ title: "Bittersweet", type: "Official MV", year: "2026", channel: "P NATION", ...yt("P9q7NoOQHIo") }],
+  idid: [{ title: "PUSH BACK", type: "Official MV", year: "2025", channel: "STARSHIP", ...yt("dWZCMV5ZEFk") }],
+};
 
 const sources = [
   {
     label: "SBS Gayo Daejeon 历届条目",
     url: "https://en.wikipedia.org/wiki/SBS_Gayo_Daejeon",
-    note: "用于校对历届场次、日期和公开表演阵容，正式上线前建议再比对 SBS 官方节目页。",
+    note: "用于校对 2024 Summer、2025 Summer、2025 Winter 等公开场次阵容。",
   },
   {
     label: "KINTEX 交通与场馆信息",
@@ -419,14 +472,14 @@ const sources = [
     note: "用于补充场馆定位、首尔出发交通和散场预留时间。",
   },
   {
-    label: "YouTube 官方搜索入口",
+    label: "YouTube 官方 MV",
     url: "https://www.youtube.com/",
-    note: "艺人资料页的 MV/舞台入口采用官方关键词搜索，后续可替换为具体官方视频链接和封面。",
+    note: "视频卡片已改为直达 YouTube 视频，并使用 YouTube 缩略图作为封面。",
   },
   {
-    label: "本次海报图",
-    url: "assets/sbs-2026-summer-poster.jpg",
-    note: "用户提供的阵容图，作为 2026 Summer 页面当前基础信息。",
+    label: "成员资料更新",
+    url: "https://en.wikipedia.org/wiki/Zerobaseone",
+    note: "ZEROBASEONE 已更新为 2026 年 5 人体制；izna、IDID、AND2BLE 等也按当前公开资料修正。",
   },
 ];
 
@@ -444,9 +497,19 @@ function applyTone(el, index) {
   el.style.setProperty("--tone-b", b);
 }
 
-function youtubeSearchUrl(artist, keyword) {
-  const query = encodeURIComponent(`${artist} ${keyword} official`);
-  return `https://www.youtube.com/results?search_query=${query}`;
+function imageFallback(img) {
+  img.closest(".image-shell")?.classList.add("is-missing");
+  img.remove();
+}
+
+function initials(name) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
 }
 
 function renderGrid(type = "solo") {
@@ -455,7 +518,9 @@ function renderGrid(type = "solo") {
     .map(
       (artist, index) => `
         <button class="artist-card reveal" type="button" data-id="${artist.id}" style="--tone-a:${getTone(index)[0]};--tone-b:${getTone(index)[1]}">
-          <div class="artist-visual">
+          <div class="artist-visual image-shell">
+            <img src="${localCover(artist.id)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+            <span class="fallback-name">${artist.name}</span>
             <span class="artist-rank">#${artist.rank}</span>
           </div>
           <div class="artist-body">
@@ -479,7 +544,7 @@ function renderGrid(type = "solo") {
 function renderProfile(artist) {
   const index = artists.findIndex((item) => item.id === artist.id);
   const [toneA, toneB] = getTone(index);
-  const media = artist.media.slice(0, 8);
+  const media = (mediaByArtist[artist.id] || []).slice(0, 8);
   profile.style.setProperty("--tone-a", toneA);
   profile.style.setProperty("--tone-b", toneB);
   profile.classList.remove("reveal");
@@ -487,41 +552,65 @@ function renderProfile(artist) {
   profile.classList.add("reveal");
   profile.innerHTML = `
     <div class="profile-hero">
-      <p class="eyebrow">${artist.korean} · ${artist.agency}</p>
-      <h2>${artist.name}</h2>
-      <div class="profile-meta">
-        <span class="pill">${artist.type === "solo" ? "个人 / 乐队" : artist.type === "boy" ? "男团" : "女团"}</span>
-        <span class="pill">海报排序 #${artist.rank}</span>
-        <span class="pill">推荐先看 ${media.length} 个入口</span>
+      <div class="profile-cover image-shell">
+        <img src="${localCover(artist.id)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+        <span class="fallback-name">${artist.name}</span>
+      </div>
+      <div>
+        <p class="eyebrow">${artist.korean} · ${artist.agency}</p>
+        <h2>${artist.name}</h2>
+        <div class="profile-meta">
+          <span class="pill">${artist.type === "solo" ? "个人 / 乐队" : artist.type === "boy" ? "男团" : "女团"}</span>
+          <span class="pill">海报排序 #${artist.rank}</span>
+          <span class="pill">${media.length ? `${media.length} 个官方视频` : "视频待补"}</span>
+        </div>
       </div>
     </div>
     <div class="profile-content">
       <div>
-        <h3>入门一句话</h3>
+        <h3>基本信息</h3>
         <p>${artist.hook}</p>
-        <h3>个人 / 团体介绍</h3>
+        <h3>艺人简介</h3>
         <p>${artist.intro}</p>
         <h3>成员</h3>
         <div class="member-grid">
-          ${artist.members.map((member) => `<span class="member-chip">${member}</span>`).join("")}
-        </div>
-      </div>
-      <aside>
-        <h3>MV 与舞台入口</h3>
-        <div class="media-list">
-          ${media
+          ${artist.members
             .map(
-              (item, mediaIndex) => `
-                <a class="media-card" href="${youtubeSearchUrl(artist.name, item)}" target="_blank" rel="noreferrer">
-                  <span class="media-thumb">PLAY</span>
-                  <span>
-                    <strong>${item}</strong>
-                    <span>打开 YouTube，优先选择官方频道/节目频道。</span>
-                  </span>
-                </a>
+              (member) => `
+                <span class="member-chip image-shell">
+                  <img src="${member.image}" alt="${member.name}" onerror="imageFallback(this)" />
+                  <span class="member-initials">${initials(member.name)}</span>
+                  <strong>${member.name}</strong>
+                  ${member.cn ? `<small>${member.cn}</small>` : ""}
+                </span>
               `,
             )
             .join("")}
+        </div>
+      </div>
+      <aside>
+        <h3>MV / Stage</h3>
+        <div class="media-list">
+          ${
+            media.length
+              ? media
+                  .map(
+                    (item) => `
+                      <a class="media-card" href="${item.url}" target="_blank" rel="noreferrer">
+                        <span class="media-thumb image-shell">
+                          <img src="${item.thumbnail}" alt="${item.title}" onerror="imageFallback(this)" />
+                          <span class="play-mark">PLAY</span>
+                        </span>
+                        <span>
+                          <strong>${item.title}</strong>
+                          <span>${item.type} · ${item.year} · ${item.channel}</span>
+                        </span>
+                      </a>
+                    `,
+                  )
+                  .join("")
+              : `<div class="media-empty">官方视频链接待补。建议优先使用官方频道 MV 或 SBS/KBS/Mnet 等节目频道舞台。</div>`
+          }
         </div>
       </aside>
     </div>
@@ -539,21 +628,6 @@ function renderHistory() {
           </div>
           <div class="timeline-tags">
             ${item.artists.map((name) => `<span>${name}</span>`).join("")}
-          </div>
-        </article>
-      `,
-    )
-    .join("");
-}
-
-function renderPredictions() {
-  document.querySelector("#prediction-list").innerHTML = predictions
-    .map(
-      (tier) => `
-        <article class="prediction-tier reveal">
-          <h3>${tier.tier}<small>${tier.note}</small></h3>
-          <div class="timeline-tags">
-            ${tier.names.map((name) => `<span>${name}</span>`).join("")}
           </div>
         </article>
       `,
@@ -592,5 +666,4 @@ document.querySelector("#artist-count").textContent = `${artists.length} 组`;
 renderGrid("solo");
 renderProfile(artists[0]);
 renderHistory();
-renderPredictions();
 renderSources();
