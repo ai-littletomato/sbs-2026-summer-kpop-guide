@@ -413,7 +413,7 @@ const history = [
   {
     title: "2024 Winter",
     date: "2024.12.25 · Inspire Arena",
-    artists: ["Key", "NCT 127", "NCT DREAM", "Stray Kids", "(G)I-DLE", "ATEEZ", "ITZY", "TXT", "aespa", "IVE", "NMIXX", "RIIZE", "BABYMONSTER", "NCT WISH"],
+    artists: ["2NE1", "Aespa", "Ateez", "Babymonster", "BoyNextDoor", "Cravity", "Enhypen", "G-Dragon", "(G)I-DLE", "Illit", "Itzy", "Ive", "Izna", "Key", "Le Sserafim", "Lee Young-ji", "NCT 127", "NCT Dream", "NCT Wish", "NewJeans", "Nexz", "Nmixx", "Riize", "Stray Kids", "TXT", "Treasure", "TWS", "WayV", "Zerobaseone"],
   },
   {
     title: "2025 Summer",
