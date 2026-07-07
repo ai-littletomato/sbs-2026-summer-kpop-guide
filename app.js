@@ -433,12 +433,14 @@ const history = [
 ];
 
 const mediaByArtist = {
+  picheolin: [{ title: "Picheolin Stage", type: "Stage", year: "2026", channel: "YouTube", ...yt("U5Ppzz8jeI8") }],
   wonpil: [{ title: "A journey", type: "Official MV", year: "2022", channel: "JYP Entertainment", ...yt("5gR8kqgv9oc") }],
   taeyong: [{ title: "TAP", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("vjGIY_GyAz4") }],
   ten: [{ title: "Nightwalker", type: "Official MV", year: "2024", channel: "SMTOWN", ...yt("ri6FaIavnWA") }],
   bol4: [{ title: "Lips", type: "Official MV", year: "2024", channel: "BOL4", ...yt("TOy0BL_HrO8") }],
   bibi: [{ title: "Bam Yang Gang", type: "Official MV", year: "2024", channel: "BIBI", ...yt("smdmEhkIRVc") }],
   yena: [{ title: "SMILEY", type: "Official MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") }],
+  evan: [{ title: "Dial Tragedy", type: "Official MV", year: "2026", channel: "EVAN", ...yt("F6Ix6V2Cx-w") }],
   "stray-kids": [{ title: "Chk Chk Boom", type: "Official MV", year: "2024", channel: "JYP Entertainment", ...yt("0P0aQreFs8w") }],
   ateez: [{ title: "Ice On My Teeth", type: "Official MV", year: "2024", channel: "KQ Entertainment", ...yt("5OflOlcHLb8") }],
   xikers: [{ title: "BREATHE", type: "Official MV", year: "2025", channel: "KQ Entertainment", ...yt("aUMr0Oi1I-E") }],
@@ -498,8 +500,12 @@ function applyTone(el, index) {
 }
 
 function imageFallback(img) {
+  const fallback = img.dataset.fallback;
+  if (fallback && img.src !== new URL(fallback, window.location.href).href) {
+    img.src = fallback;
+    return;
+  }
   img.closest(".image-shell")?.classList.add("is-missing");
-  img.remove();
 }
 
 function initials(name) {
@@ -512,6 +518,10 @@ function initials(name) {
     .toUpperCase();
 }
 
+function coverFallback(artist) {
+  return mediaByArtist[artist.id]?.[0]?.thumbnail || "assets/sbs-2026-summer-poster.jpg";
+}
+
 function renderGrid(type = "solo") {
   const filtered = artists.filter((artist) => artist.type === type).sort((a, b) => a.rank - b.rank);
   grid.innerHTML = filtered
@@ -519,7 +529,7 @@ function renderGrid(type = "solo") {
       (artist, index) => `
         <button class="artist-card reveal" type="button" data-id="${artist.id}" style="--tone-a:${getTone(index)[0]};--tone-b:${getTone(index)[1]}">
           <div class="artist-visual image-shell">
-            <img src="${localCover(artist.id)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+            <img src="${localCover(artist.id)}" data-fallback="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
             <span class="fallback-name">${artist.name}</span>
             <span class="artist-rank">#${artist.rank}</span>
           </div>
@@ -553,7 +563,7 @@ function renderProfile(artist) {
   profile.innerHTML = `
     <div class="profile-hero">
       <div class="profile-cover image-shell">
-        <img src="${localCover(artist.id)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
+        <img src="${localCover(artist.id)}" data-fallback="${coverFallback(artist)}" alt="${artist.name} cover" onerror="imageFallback(this)" />
         <span class="fallback-name">${artist.name}</span>
       </div>
       <div>
@@ -578,7 +588,7 @@ function renderProfile(artist) {
             .map(
               (member) => `
                 <span class="member-chip image-shell">
-                  <img src="${member.image}" alt="${member.name}" onerror="imageFallback(this)" />
+                  <img src="${member.image}" data-fallback="${coverFallback(artist)}" alt="${member.name}" onerror="imageFallback(this)" />
                   <span class="member-initials">${initials(member.name)}</span>
                   <strong>${member.name}</strong>
                   ${member.cn ? `<small>${member.cn}</small>` : ""}
