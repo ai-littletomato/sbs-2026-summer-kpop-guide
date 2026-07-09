@@ -191,16 +191,12 @@ main {
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.92) 0 1.2rem, transparent 1.3rem),
-    radial-gradient(circle at 11% 78%, rgba(255, 255, 255, 0.82) 0 1.5rem, transparent 1.6rem),
-    linear-gradient(176deg, var(--cream) 0 13%, transparent 13.4%),
-    linear-gradient(183deg, var(--orange) 0 18%, transparent 18.4%),
-    linear-gradient(177deg, var(--lemon) 0 26%, transparent 26.5%),
-    linear-gradient(184deg, var(--sky) 0 42%, transparent 42.5%),
-    linear-gradient(177deg, var(--lavender) 0 56%, transparent 56.5%),
-    linear-gradient(183deg, var(--mint) 0 72%, transparent 72.5%),
-    linear-gradient(176deg, #ff7480 0 83%, transparent 83.5%),
-    linear-gradient(180deg, #effff9 0%, #fff9dc 100%);
+    radial-gradient(ellipse at 78% 16%, rgba(255, 216, 74, 0.34) 0 13rem, transparent 13.4rem),
+    radial-gradient(ellipse at 18% 18%, rgba(255, 111, 124, 0.18) 0 14rem, transparent 14.4rem),
+    radial-gradient(ellipse at 70% 74%, rgba(201, 167, 255, 0.28) 0 18rem, transparent 18.4rem),
+    radial-gradient(ellipse at 20% 82%, rgba(85, 215, 207, 0.24) 0 16rem, transparent 16.5rem),
+    linear-gradient(90deg, rgba(255, 247, 220, 0.96) 0%, rgba(255, 247, 220, 0.82) 48%, rgba(255, 247, 220, 0.36) 78%, rgba(255, 247, 220, 0.16) 100%),
+    url("assets/sbs-summer-fluid-hero.png") center right / cover no-repeat;
   box-shadow: 0 30px 90px rgba(255, 153, 84, 0.18);
   isolation: isolate;
 }
@@ -211,28 +207,29 @@ main {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse at 50% 33%, rgba(255, 255, 255, 0.72) 0 24%, transparent 25%),
-    radial-gradient(ellipse at 70% 18%, rgba(255, 255, 255, 0.22) 0 18%, transparent 19%),
-    linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.26));
+    radial-gradient(ellipse at 48% 35%, rgba(255, 255, 255, 0.8) 0 19%, transparent 20%),
+    radial-gradient(ellipse at 61% 58%, rgba(234, 255, 247, 0.55) 0 20%, transparent 21%),
+    radial-gradient(ellipse at 30% 68%, rgba(255, 116, 128, 0.24) 0 18%, transparent 19%);
+  filter: blur(1px);
   animation: waveGlow 7s ease-in-out infinite;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  right: clamp(24px, 7vw, 90px);
+  right: clamp(22px, 5vw, 76px);
   bottom: clamp(18px, 5vw, 56px);
   z-index: 0;
-  width: clamp(72px, 12vw, 142px);
-  aspect-ratio: 0.72;
-  border-radius: 45% 45% 10% 10%;
+  width: clamp(116px, 18vw, 220px);
+  aspect-ratio: 1.15;
+  border-radius: 45% 55% 48% 52% / 52% 44% 56% 48%;
   background:
-    radial-gradient(circle at 36% 19%, #fff 0 14%, transparent 15%),
-    radial-gradient(circle at 64% 19%, #fff 0 14%, transparent 15%),
-    linear-gradient(90deg, transparent 0 31%, #fff 32% 42%, transparent 43% 57%, #fff 58% 68%, transparent 69%),
-    linear-gradient(180deg, #fff4fa 0 34%, var(--aqua) 35% 78%, var(--orange) 79% 100%);
-  clip-path: polygon(10% 18%, 90% 18%, 62% 100%, 38% 100%);
-  filter: drop-shadow(0 18px 28px rgba(255, 111, 124, 0.24));
+    radial-gradient(circle at 24% 28%, rgba(255, 255, 255, 0.92) 0 7%, transparent 8%),
+    radial-gradient(circle at 74% 68%, rgba(255, 216, 74, 0.68) 0 8%, transparent 9%),
+    radial-gradient(circle at 72% 26%, rgba(255, 111, 124, 0.68) 0 7%, transparent 8%),
+    linear-gradient(135deg, rgba(85, 215, 207, 0.68), rgba(201, 167, 255, 0.54) 52%, rgba(255, 153, 84, 0.5));
+  filter: blur(0.2px) drop-shadow(0 18px 28px rgba(255, 111, 124, 0.18));
+  opacity: 0.86;
   animation: coneFloat 4.6s ease-in-out infinite;
 }
 
@@ -884,16 +881,15 @@ section {
     min-height: auto;
     padding: 44px 20px 150px;
     background:
-      radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.8) 0 1rem, transparent 1.1rem),
-      linear-gradient(178deg, var(--cream) 0 14%, transparent 14.5%),
-      linear-gradient(184deg, var(--lemon) 0 30%, transparent 30.5%),
-      linear-gradient(177deg, var(--sky) 0 48%, transparent 48.5%),
-      linear-gradient(184deg, var(--lavender) 0 68%, transparent 68.5%),
-      linear-gradient(180deg, #effff9 0%, #fff9dc 100%);
+      radial-gradient(ellipse at 76% 10%, rgba(255, 216, 74, 0.46) 0 8rem, transparent 8.4rem),
+      radial-gradient(ellipse at 8% 14%, rgba(255, 111, 124, 0.26) 0 9rem, transparent 9.4rem),
+      radial-gradient(ellipse at 78% 82%, rgba(201, 167, 255, 0.4) 0 10rem, transparent 10.4rem),
+      linear-gradient(180deg, rgba(255, 247, 220, 0.96), rgba(234, 255, 247, 0.9)),
+      url("assets/sbs-summer-fluid-hero.png") center bottom / cover no-repeat;
   }
 
   .hero::after {
-    width: 78px;
+    width: 96px;
     right: 18px;
     bottom: 18px;
   }
