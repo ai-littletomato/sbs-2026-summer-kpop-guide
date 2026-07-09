@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T18:19:19",
+  "generatedAt": "2026-07-09T15:01:40",
   "images": [
     {
       "artist": "Picheolin",
@@ -105,11 +105,12 @@
     },
     {
       "artist": "YENA",
+      "member": null,
       "kind": "cover",
       "path": "assets/artists/yena/cover.jpg",
       "status": "downloaded",
-      "query": "YENA official group photo 2026 concept photo",
-      "source": "https://www.juventus.com/images/image/private/t_editorial_landscape_12_desktop/f_auto/dev/h0pgoeqe61ucujoipvsy.jpg"
+      "query": "YENA LOVE CATCHER Makestar 2026",
+      "source": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10360_YENA_2_banner_sub.jpg_2026-02-25_172137839810.jpg"
     },
     {
       "artist": "YENA",
@@ -117,8 +118,8 @@
       "kind": "member",
       "path": "assets/artists/yena/members/yena.jpg",
       "status": "downloaded",
-      "query": "YENA YENA official profile photo 2026",
-      "source": "https://gd-hbimg.huaban.com/202fa81329a57daac9fce253907845ca611b0aae1bb85-Tqfz3j_fw658"
+      "query": "YENA LOVE CATCHER Makestar 2026",
+      "source": "https://mystarroom-public-cdn.makestar.com/public/image/product/P_10360_YENA_2_banner_sub.jpg_2026-02-25_172137839810.jpg"
     },
     {
       "artist": "EVAN",
@@ -840,11 +841,12 @@
     },
     {
       "artist": "AND2BLE",
+      "member": null,
       "kind": "cover",
       "path": "assets/artists/and2ble/cover.jpg",
       "status": "downloaded",
-      "query": "AND2BLE official group photo 2026 concept photo",
-      "source": "https://tmtn-site.com/wp-content/uploads/2026/06/and2ble.jpg"
+      "query": "kpopping AND2BLE group profile",
+      "source": "https://cdn.kpopping.com/groups/and2ble/profile.png?v=1781553357366"
     },
     {
       "artist": "AND2BLE",
@@ -1145,7 +1147,7 @@
       "path": "assets/artists/hearts2hearts/members/jiwoo.jpg",
       "status": "downloaded",
       "query": "kpopping profile",
-      "source": "https://cdn.kpopping.com/idols/Jiwoo/profile.png?v=1783358585657"
+      "source": "https://cdn.kpopping.com/idols/Jiwoo10/profile.jpg?v=1782117384189"
     },
     {
       "artist": "Hearts2Hearts",
@@ -1190,7 +1192,7 @@
       "path": "assets/artists/hearts2hearts/members/ian.jpg",
       "status": "downloaded",
       "query": "kpopping profile",
-      "source": "https://cdn.kpopping.com/idols/Ian/profile.webp"
+      "source": "https://cdn.kpopping.com/idols/Ian5/profile.jpg?v=1782117720618"
     },
     {
       "artist": "Hearts2Hearts",

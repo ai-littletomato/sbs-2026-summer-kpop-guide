@@ -94,6 +94,8 @@ MEMBER_SLUG_OVERRIDES = {
     "TAEYONG": "Taeyong",
     "TEN": "Ten",
     "EVAN": "Heeseung",
+    "Ian": "Ian5",
+    "Jiwoo": "Jiwoo10",
     "Yoo Seung-eon": "Yoo-Seung-Eon",
     "YENA": "Choi-Yena",
     "Yechan": "Yechan4",

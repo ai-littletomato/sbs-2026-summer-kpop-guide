@@ -20,6 +20,167 @@ const memberNameMap = {
   "Yoo Seung-eon": "刘昇彦",
 };
 
+const memberRoleMap = {
+  "stray-kids": {
+    "Bang Chan": "队长 / 制作",
+    "Lee Know": "主舞",
+    Changbin: "Rap / 制作",
+    Hyunjin: "舞担 / 门面",
+    Han: "Rap / Vocal",
+    Felix: "低音 / 舞担",
+    Seungmin: "主唱",
+    "I.N": "主唱 / 忙内",
+  },
+  ateez: {
+    Hongjoong: "队长 / Rap",
+    Seonghwa: "Vocal / 门面",
+    Yunho: "主舞",
+    Yeosang: "Vocal / 视觉",
+    San: "Performance",
+    Mingi: "Rap / 舞担",
+    Wooyoung: "主舞",
+    Jongho: "主唱",
+  },
+  xikers: {
+    Minjae: "队长 / Rap",
+    Junmin: "主舞",
+    Sumin: "Rap",
+    Jinsik: "Vocal",
+    Hyunwoo: "主唱",
+    Junghoon: "Vocal",
+    Seeun: "Performance",
+    Yujun: "舞担",
+    Hunter: "主舞",
+    Yechan: "Rap / 忙内",
+  },
+  zerobaseone: {
+    "Kim Ji-woong": "Vocal / 门面",
+    "Sung Han-bin": "队长 / Center",
+    "Seok Matthew": "Vocal / 舞担",
+    "Kim Tae-rae": "主唱",
+    "Park Gun-wook": "Rap / Performance",
+  },
+  riize: {
+    Shotaro: "主舞",
+    Eunseok: "Vocal / 视觉",
+    Sungchan: "Rap / 视觉",
+    Wonbin: "Center / 舞担",
+    Sohee: "主唱",
+    Anton: "Vocal / 忙内",
+  },
+  "nct-wish": {
+    Sion: "队长",
+    Riku: "Rap",
+    Yushi: "舞担",
+    Jaehee: "主唱",
+    Ryo: "Performance",
+    Sakuya: "忙内",
+  },
+  nexz: {
+    Tomoya: "队长 / Dance",
+    Yu: "Vocal / 视觉",
+    Haru: "Rap / Dance",
+    "So Geon": "Vocal",
+    Seita: "Vocal",
+    Hyui: "Rap",
+    Yuki: "忙内",
+  },
+  kickflip: {
+    Kyehoon: "队长",
+    Amaru: "Vocal",
+    Donghwa: "Rap",
+    Juwang: "Vocal",
+    Minje: "Dance",
+    Keiju: "Performance",
+    Donghyeon: "忙内",
+  },
+  axmxp: {
+    "Ha Yoo-joon": "Vocal / Guitar",
+    Cru: "Drums",
+    "Kim Shin": "Bass",
+    Juhwan: "Vocal / Guitar",
+  },
+  "alpha-drive-one": {
+    Junseo: "舞台核心",
+    Arno: "Vocal",
+    Leo: "Rap",
+    Geonwoo: "Dance",
+    Sangwon: "Performance",
+    Xinlong: "Visual",
+    Anxin: "Vocal",
+    Sanghyeon: "忙内",
+  },
+  and2ble: {
+    "Zhang Hao": "队长 / 主唱 / Center",
+    "Yoo Seung-eon": "主唱",
+    Ricky: "Vocal / 门面",
+    "Kim Gyu-vin": "Rap / Vocal",
+    "Han Yu-jin": "主舞 / 忙内",
+  },
+  "kiss-of-life": {
+    Julie: "队长 / Rap",
+    Natty: "主舞 / Vocal",
+    Belle: "主唱",
+    Haneul: "Vocal / 忙内",
+  },
+  babymonster: {
+    Ruka: "Rap",
+    Pharita: "Vocal",
+    Asa: "Rap / Dance",
+    Ahyeon: "Vocal / Rap",
+    Rami: "主唱",
+    Rora: "Vocal",
+    Chiquita: "舞担 / 忙内",
+  },
+  meovv: {
+    Sooin: "Dance",
+    Gawon: "Vocal / 视觉",
+    Anna: "Visual",
+    Narin: "Rap / Vocal",
+    Ella: "Center",
+  },
+  izna: {
+    Mai: "舞台核心 / 视觉",
+    "Bang Jee-min": "Vocal / Dance",
+    Koko: "主舞",
+    "Ryu Sa-rang": "Vocal",
+    "Choi Jung-eun": "主唱",
+    "Jeong Sae-bi": "Center / 忙内",
+  },
+  hearts2hearts: {
+    Carmen: "主唱",
+    Jiwoo: "队长 / 领舞 / 门面",
+    Yuha: "ACE",
+    Stella: "领唱",
+    Juun: "主舞 / Rap",
+    "A-na": "门面 / 舞担",
+    Ian: "Center / 门面",
+    "Ye-on": "领唱 / 忙内",
+  },
+  "allday-project": {
+    Annie: "Vocal / 话题位",
+    Tarzzan: "Rap",
+    Bailey: "主舞",
+    Woochan: "Rap",
+    Youngseo: "Vocal",
+  },
+  "baby-dont-cry": {
+    Yihyun: "舞台核心",
+    Kumi: "Dance",
+    Mia: "Vocal",
+    Beni: "Rap / 忙内",
+  },
+  idid: {
+    "Jang Yong-hoon": "舞台核心",
+    "Kim Min-jae": "Vocal",
+    "Park Won-bin": "Dance",
+    "Chu Yoo-chan": "Rap",
+    "Park Seong-hyeon": "Vocal",
+    "Baek Jun-hyuk": "Performance",
+    "Jeong Se-min": "忙内",
+  },
+};
+
 function localCover(id) {
   return `assets/artists/${id}/cover.jpg`;
 }
@@ -39,6 +200,7 @@ function makeMembers(artistId, names) {
   return names.map((name) => ({
     name,
     cn: memberNameMap[name] || "",
+    role: memberRoleMap[artistId]?.[name] || "",
     image: localMemberImage(artistId, name),
   }));
 }
@@ -61,6 +223,8 @@ const artists = [
     hook: "SEVENTEEN Dino 的角色型舞台企划，综艺感和表演反差是重点。",
     intro:
       "Picheolin 来自 SEVENTEEN 成员 Dino 的角色企划，常以夸张人设和舞台反差制造记忆点。它不是传统 solo 档案，更接近大型舞台里的特别角色卡。",
+    recent:
+      "近一年更适合按“特别舞台”来理解：看 Dino 的舞蹈线条、综艺角色感和现场反应，重点不是打歌期，而是大型拼盘里突然变换空气的惊喜点。",
     members: makeMembers("picheolin", ["Dino"]),
     media: ["Picheolin official stage", "SEVENTEEN Dino dance performance"],
   },
@@ -74,6 +238,8 @@ const artists = [
     hook: "DAY6 主唱键盘手，擅长清亮抒情与乐队情绪线。",
     intro:
       "Wonpil 是 DAY6 的成员之一，solo 作品偏抒情和细腻叙事。拼盘里他的价值在于让整场不只有强舞曲，也有能让观众坐下来听旋律的段落。",
+    recent:
+      "近一年舞台重点放在 solo concert 与 DAY6 现场感：他的强项不是高压编舞，而是把旋律、键盘和清亮声线稳稳推到观众面前。",
     members: makeMembers("wonpil", ["Wonpil"]),
     media: ["Wonpil solo MV", "DAY6 live performance"],
   },
@@ -87,6 +253,8 @@ const artists = [
     hook: "NCT 成员兼 solo 歌手，rap、舞蹈和视觉概念都很强。",
     intro:
       "TAEYONG 是 NCT 成员，也是 SM 男 solo 中个人风格非常鲜明的一位。作品常带实验电子、hip-hop 和强视觉概念，适合关注舞台动作质感与个人表达的观众。",
+    recent:
+      "近一年页面优先收录《TAP》后的个人舞台和 TY TRACK 现场。预习时可以抓两件事：他很会用表情做镜头钩子，也很会把怪味编曲跳得有秩序。",
     members: makeMembers("taeyong", ["TAEYONG"]),
     media: ["TAEYONG latest MV", "TAEYONG TAP official MV", "TAEYONG SHALALA official MV"],
   },
@@ -100,6 +268,8 @@ const artists = [
     hook: "舞蹈型 solo，线条、律动和视觉概念都很鲜明。",
     intro:
       "TEN 是 NCT/WayV 成员，solo 舞台强调身体控制、时装感和偏暗色的流行编舞。适合关注舞台完成度、镜头表现和个人风格的观众。",
+    recent:
+      "近一年仍以《Nightwalker》体系和个人舞台为核心预习入口。TEN 的看点是“身体会说话”：动作不靠大开大合硬冲，而是靠线条、重心和眼神把氛围拉满。",
     members: makeMembers("ten", ["TEN"]),
     media: ["TEN latest MV", "TEN Nightwalker official MV", "TEN dance performance"],
   },
@@ -113,6 +283,8 @@ const artists = [
     hook: "清新女声代表，旋律轻盈，适合夏天场的中段换气。",
     intro:
       "BOL4 以清新、轻快、带一点少女叙事感的歌曲出圈。对于第一次看拼盘的人，她能提供和大编舞男团女团完全不同的听感。",
+    recent:
+      "近一年适合从《Lips》和现场合集切入：BOL4 的歌很容易一听就记住旋律，放在夏季拼盘里像一杯气泡饮，轻但不寡。",
     members: makeMembers("bol4", ["Ahn Ji-young"]),
     media: ["BOL4 latest MV", "BOL4 Some official MV"],
   },
@@ -126,6 +298,8 @@ const artists = [
     hook: "R&B、hip-hop、另类流行之间自由切换，舞台气质很强。",
     intro:
       "BIBI 的作品常带电影感和坏女孩叙事，唱腔、造型、表达都很有个人标签。她在拼盘里通常承担“风格转换器”的角色。",
+    recent:
+      "近一年可把《Bam Yang Gang》的大众度和后续现场一起看：她不是标准甜妹 solo，而是会把可爱、危险、松弛和一点疯劲混在同一张脸上。",
     members: makeMembers("bibi", ["BIBI"]),
     media: ["BIBI latest MV", "BIBI Bam Yang Gang official MV", "BIBI live stage"],
   },
@@ -139,6 +313,8 @@ const artists = [
     hook: "明亮能量型女 solo，综艺感和舞台亲和力都高。",
     intro:
       "Choi Yena 以活泼、明快、漫画感的 pop-rock/舞曲路线被熟悉。她的舞台适合不熟 K-Pop 的观众快速建立好感。",
+    recent:
+      "近一年重点放在《Love Catcher》时期和 2026 单曲《Catch Catch》：YENA 的优势是明亮但不扁平，甜感里会带一点小恶作剧式的冲劲。",
     members: makeMembers("yena", ["YENA"]),
     media: ["YENA latest MV", "YENA Smiley official MV"],
   },
@@ -152,6 +328,8 @@ const artists = [
     hook: "Heeseung 的 solo 名义，主唱底子和舞台脸都很有辨识度。",
     intro:
       "EVAN 是 Lee Hee-seung 使用的 solo 艺名。公开资料显示他从 ENHYPEN 活动后转入个人阶段，声线、舞台中心感和高音表现是最容易被记住的部分。",
+    recent:
+      "近一年页面优先放《Dial Tragedy》《Ride or Die》这类个人作品和 band live。预习时可以重点听他的音色厚度，以及副歌里顶住情绪的能力。",
     members: makeMembers("evan", ["EVAN"]),
     media: ["EVAN official stage", "EVAN profile video"],
   },
@@ -455,8 +633,9 @@ const mediaByArtist = {
     { title: "Scott and Zelda", type: "Live Stage", year: "2025", channel: "KBS WORLD TV", ...yt("jnJhgC1KFHU") },
   ],
   yena: [
-    { title: "SMILEY", type: "Official MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") },
+    { title: "Catch Catch", type: "Official MV", year: "2026", channel: "YENA", ...yt("A0WwrM3i11k") },
     { title: "Catch Catch", type: "Live Stage", year: "2026", channel: "MBC", ...yt("A0WwrM3i11k") },
+    { title: "SMILEY", type: "Hit MV", year: "2022", channel: "YENA", ...yt("y9kkXTucnLU") },
   ],
   evan: [
     { title: "Dial Tragedy", type: "Official MV", year: "2026", channel: "EVAN", ...yt("F6Ix6V2Cx-w") },
@@ -523,6 +702,7 @@ const mediaByArtist = {
     { title: "Mamma Mia", type: "Live Stage", year: "2026", channel: "KCON JAPAN", ...yt("MdIaKe4QBPE") },
   ],
   hearts2hearts: [
+    { title: "Lemon Tang", type: "Latest Era", year: "2026", channel: "SMTOWN", ...yt("QCbVM7F7mP8") },
     { title: "Rude!", type: "Official MV", year: "2026", channel: "SMTOWN", ...yt("F7sGJVUrkjQ") },
     { title: "RUDE!", type: "Live Stage", year: "2026", channel: "KCON JAPAN", ...yt("0KuzJDGOJWM") },
   ],
@@ -552,14 +732,24 @@ const sources = [
     note: "用于补充场馆定位、首尔出发交通和散场预留时间。",
   },
   {
-    label: "YouTube 官方 MV",
+    label: "YouTube 官方 MV / Stage",
     url: "https://www.youtube.com/",
-    note: "视频卡片已改为直达 YouTube 视频，并使用 YouTube 缩略图作为封面。",
+    note: "视频卡片直达 MV 或现场，封面优先使用视频缩略图，缺失时回退到本地艺人图。",
   },
   {
-    label: "成员资料更新",
-    url: "https://en.wikipedia.org/wiki/Zerobaseone",
-    note: "ZEROBASEONE 已更新为 2026 年 5 人体制；izna、IDID、AND2BLE 等也按当前公开资料修正。",
+    label: "AND2BLE group profile",
+    url: "https://kpopping.com/profiles/group/and2ble",
+    note: "用于核对 AND2BLE 5 人阵容、出道日期、成员定位和团体图。",
+  },
+  {
+    label: "Hearts2Hearts Lemon Tang interview",
+    url: "https://www.marieclaire.com/culture/music/hearts2hearts-lemon-tang-music-taste-interview/",
+    note: "用于补充 Hearts2Hearts 2026 夏季作品线索。",
+  },
+  {
+    label: "YENA Love Catcher / Catch Catch",
+    url: "https://www.makestar.co/projects/singer_yena_03/story",
+    note: "用于更新 YENA 2026 作品和概念图。",
   },
 ];
 
@@ -588,6 +778,12 @@ function imageFallback(img) {
   img.closest(".image-shell")?.classList.add("is-missing");
 }
 
+function imageLoaded(img) {
+  if (img.closest(".media-thumb") && img.naturalWidth <= 120 && img.dataset.fallbacks) {
+    imageFallback(img);
+  }
+}
+
 function initials(name) {
   return name
     .split(/\s+/)
@@ -599,7 +795,7 @@ function initials(name) {
 }
 
 function coverFallback(artist) {
-  return "assets/sbs-2026-summer-poster.jpg";
+  return "assets/sbs-summer-fluid-hero.png";
 }
 
 function renderGrid(type = "solo") {
@@ -635,6 +831,27 @@ function renderProfile(artist) {
   const index = artists.findIndex((item) => item.id === artist.id);
   const [toneA, toneB] = getTone(index);
   const media = (mediaByArtist[artist.id] || []).slice(0, 8);
+  const memberSection =
+    artist.type === "solo"
+      ? ""
+      : `
+        <h3>成员</h3>
+        <div class="member-grid">
+          ${artist.members
+            .map(
+              (member) => `
+                <span class="member-chip image-shell">
+                  <img src="${member.image}" data-fallbacks="${localCover(artist.id)}|${coverFallback(artist)}" alt="${member.name}" onerror="imageFallback(this)" />
+                  <span class="member-initials">${initials(member.name)}</span>
+                  <strong>${member.name}</strong>
+                  ${member.cn ? `<small>${member.cn}</small>` : ""}
+                  ${member.role ? `<em>${member.role}</em>` : ""}
+                </span>
+              `,
+            )
+            .join("")}
+        </div>
+      `;
   profile.style.setProperty("--tone-a", toneA);
   profile.style.setProperty("--tone-b", toneB);
   profile.classList.remove("reveal");
@@ -657,21 +874,8 @@ function renderProfile(artist) {
         <p>${artist.hook}</p>
         <h3>艺人简介</h3>
         <p>${artist.intro}</p>
-        <h3>成员</h3>
-        <div class="member-grid">
-          ${artist.members
-            .map(
-              (member) => `
-                <span class="member-chip image-shell">
-                  <img src="${member.image}" data-fallbacks="${localCover(artist.id)}|${coverFallback(artist)}" alt="${member.name}" onerror="imageFallback(this)" />
-                  <span class="member-initials">${initials(member.name)}</span>
-                  <strong>${member.name}</strong>
-                  ${member.cn ? `<small>${member.cn}</small>` : ""}
-                </span>
-              `,
-            )
-            .join("")}
-        </div>
+        ${artist.recent ? `<h3>近一年作品</h3><p>${artist.recent}</p>` : ""}
+        ${memberSection}
       </div>
       <aside>
         <h3>MV / Stage</h3>
@@ -683,7 +887,7 @@ function renderProfile(artist) {
                     (item) => `
                       <a class="media-card" href="${item.url}" target="_blank" rel="noreferrer">
                         <span class="media-thumb image-shell">
-                          <img src="${item.thumbnail}" alt="${item.title}" onerror="imageFallback(this)" />
+                          <img src="${item.thumbnail}" data-fallbacks="${localCover(artist.id)}|${coverFallback(artist)}" alt="${item.title}" onload="imageLoaded(this)" onerror="imageFallback(this)" />
                           <span class="play-mark">PLAY</span>
                         </span>
                         <span>
@@ -738,13 +942,6 @@ tabs.forEach((tab) => {
     });
     renderGrid(tab.dataset.tab);
   });
-});
-
-document.querySelector(".ghost-action").addEventListener("click", (event) => {
-  event.preventDefault();
-  const randomArtist = artists[Math.floor(Math.random() * artists.length)];
-  renderProfile(randomArtist);
-  document.querySelector("#profile").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 document.querySelector("#artist-count").textContent = `${artists.length} 组`;
