@@ -911,13 +911,17 @@ function renderHistory() {
     .map(
       (item) => `
         <article class="timeline-item reveal">
-          <div>
+          <div class="timeline-meta">
             <div class="timeline-date">${item.title}</div>
             <p>${item.date}</p>
+            <strong>${item.artists.length} 组</strong>
           </div>
-          <div class="timeline-tags">
-            ${item.artists.map((name) => `<span>${name}</span>`).join("")}
-          </div>
+          <details class="timeline-detail" open>
+            <summary>完整阵容</summary>
+            <div class="timeline-tags">
+              ${item.artists.map((name) => `<span>${name}</span>`).join("")}
+            </div>
+          </details>
         </article>
       `,
     )

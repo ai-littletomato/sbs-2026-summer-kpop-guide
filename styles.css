@@ -1,14 +1,17 @@
 :root {
-  --sky: #4aa7ff;
-  --aqua: #7ff6d5;
+  --sky: #58b8ff;
+  --aqua: #5df0d1;
   --lime: #d8ff35;
-  --pink: #ff4fb5;
-  --orange: #ff9b2f;
-  --ink: #111827;
+  --pink: #ff4fb0;
+  --orange: #ff8b38;
+  --lemon: #ffe35c;
+  --lavender: #b99cff;
+  --ink: #101827;
   --paper: #fffdf4;
-  --muted: #5b6474;
-  --line: rgba(17, 24, 39, 0.14);
-  --shadow: 0 22px 60px rgba(13, 38, 76, 0.18);
+  --muted: #667085;
+  --line: rgba(16, 24, 39, 0.12);
+  --glass: rgba(255, 255, 255, 0.72);
+  --shadow: 0 22px 70px rgba(22, 42, 92, 0.14);
 }
 
 * {
@@ -26,9 +29,9 @@ body {
     "PingFang SC", "Microsoft YaHei", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at 8% 10%, rgba(255, 79, 181, 0.28), transparent 26rem),
-    radial-gradient(circle at 90% 0%, rgba(216, 255, 53, 0.42), transparent 24rem),
-    linear-gradient(135deg, #4aa7ff 0%, #7ff6d5 38%, #fff27a 70%, #ffb45f 100%);
+    linear-gradient(125deg, rgba(88, 184, 255, 0.24), transparent 36%),
+    linear-gradient(245deg, rgba(255, 227, 92, 0.32), transparent 34%),
+    linear-gradient(180deg, #f7fcff 0%, #fff9e8 48%, #fff4fb 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -39,9 +42,9 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(255, 255, 255, 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+  background-size: 52px 52px;
   mask-image: linear-gradient(to bottom, black, transparent 80%);
   z-index: -2;
 }
@@ -63,26 +66,21 @@ a {
   content: "";
   position: absolute;
   inset: -20%;
-  background-image:
-    linear-gradient(72deg, transparent 0 44%, rgba(255, 79, 181, 0.92) 45% 51%, transparent 52%),
-    linear-gradient(102deg, transparent 0 46%, rgba(216, 255, 53, 0.95) 47% 52%, transparent 53%),
-    linear-gradient(64deg, transparent 0 47%, rgba(255, 255, 255, 0.92) 48% 53%, transparent 54%),
-    linear-gradient(118deg, transparent 0 46%, rgba(255, 155, 47, 0.95) 47% 52%, transparent 53%);
-  background-size: 150px 110px;
-  background-position:
-    10px 10px,
-    70px 36px,
-    110px 58px,
-    42px 72px;
-  opacity: 0.35;
-  transform: rotate(-12deg) skewY(-3deg);
-  animation: drift 28s linear infinite;
+  background:
+    linear-gradient(115deg, transparent 8%, rgba(255, 79, 176, 0.22) 18%, transparent 30%),
+    linear-gradient(135deg, transparent 18%, rgba(93, 240, 209, 0.24) 31%, transparent 44%),
+    linear-gradient(68deg, transparent 34%, rgba(255, 227, 92, 0.24) 48%, transparent 62%),
+    linear-gradient(150deg, transparent 56%, rgba(185, 156, 255, 0.22) 70%, transparent 82%);
+  filter: blur(18px);
+  opacity: 0.56;
+  transform: rotate(-8deg) skewY(-2deg);
+  animation: drift 32s linear infinite;
 }
 
 .sprinkles::after {
   animation-duration: 36s;
   animation-direction: reverse;
-  opacity: 0.22;
+  opacity: 0.28;
   transform: rotate(14deg) skewY(4deg) scale(1.2);
 }
 
@@ -101,8 +99,8 @@ a {
   justify-content: space-between;
   gap: 20px;
   padding: 14px clamp(18px, 4vw, 54px);
-  background: rgba(255, 253, 244, 0.78);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.64);
+  border-bottom: 1px solid rgba(16, 24, 39, 0.08);
   backdrop-filter: blur(18px);
 }
 
@@ -124,10 +122,10 @@ a {
   width: 46px;
   height: 30px;
   color: white;
-  background: var(--ink);
+  background: linear-gradient(135deg, var(--ink), #26304f);
   border-radius: 7px;
   transform: rotate(-5deg);
-  box-shadow: 5px 5px 0 var(--pink);
+  box-shadow: 4px 4px 0 var(--pink);
 }
 
 .nav-links {
@@ -148,21 +146,51 @@ a {
 }
 
 main {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 .hero {
-  min-height: calc(100vh - 66px);
+  position: relative;
+  min-height: min(680px, calc(100vh - 92px));
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
   align-items: center;
-  gap: clamp(24px, 5vw, 64px);
-  padding: 34px 0 74px;
+  margin-top: 22px;
+  padding: clamp(36px, 6vw, 64px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.9) 38%, rgba(255, 255, 255, 0.42) 63%, rgba(255, 255, 255, 0.04) 100%),
+    url("assets/sbs-summer-fluid-hero.png") center right / cover no-repeat;
+  box-shadow: 0 28px 90px rgba(28, 54, 122, 0.16);
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(128deg, rgba(255, 79, 176, 0.18), transparent 42%),
+    linear-gradient(35deg, rgba(216, 255, 53, 0.2), transparent 40%);
+}
+
+.hero::after {
+  content: "SBS";
+  position: absolute;
+  right: clamp(18px, 5vw, 72px);
+  bottom: clamp(16px, 4vw, 50px);
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: clamp(86px, 16vw, 210px);
+  font-weight: 950;
+  line-height: 0.8;
 }
 
 .hero-copy {
-  padding-top: 24px;
+  max-width: 650px;
 }
 
 .eyebrow {
@@ -181,12 +209,12 @@ p {
 }
 
 h1 {
-  max-width: 790px;
+  max-width: 650px;
   margin: 0;
-  font-size: clamp(42px, 8vw, 88px);
-  line-height: 0.94;
+  font-size: clamp(38px, 5.4vw, 68px);
+  line-height: 1.02;
   letter-spacing: 0;
-  text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.8);
+  text-shadow: 0 12px 35px rgba(16, 24, 39, 0.12);
 }
 
 h2 {
@@ -201,9 +229,9 @@ h3 {
 }
 
 .hero-subtitle {
-  max-width: 640px;
+  max-width: 610px;
   margin: 22px 0 0;
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: clamp(16px, 1.7vw, 20px);
   line-height: 1.58;
   color: #233044;
 }
@@ -226,25 +254,25 @@ h3 {
   justify-content: center;
   min-height: 46px;
   padding: 0 18px;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.12);
   border-radius: 999px;
   font-weight: 950;
   text-decoration: none;
-  box-shadow: 5px 5px 0 var(--ink);
+  box-shadow: 0 16px 30px rgba(255, 79, 176, 0.28);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
 }
 
 .primary-action {
-  background: var(--pink);
+  background: linear-gradient(135deg, var(--pink), var(--orange));
   color: white;
 }
 
 .primary-action:hover,
 .artist-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 var(--ink);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(16, 24, 39, 0.14);
 }
 
 .hero-stats {
@@ -255,9 +283,10 @@ h3 {
 .hero-stats div {
   min-width: 130px;
   padding: 14px 16px;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.1);
   border-radius: 8px;
-  background: rgba(255, 253, 244, 0.78);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
 }
 
 .hero-stats dt {
@@ -269,30 +298,6 @@ h3 {
 .hero-stats dd {
   margin: 2px 0 0;
   font-weight: 950;
-}
-
-.hero-art {
-  margin: 0;
-  border: 2px solid rgba(255, 255, 255, 0.82);
-  border-radius: 8px;
-  overflow: hidden;
-  transform: rotate(1.4deg);
-  filter: drop-shadow(18px 22px 0 rgba(17, 24, 39, 0.13));
-  animation: posterFloat 5s ease-in-out infinite;
-}
-
-.hero-art img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center;
-}
-
-@keyframes posterFloat {
-  50% {
-    transform: translateY(-10px) rotate(-1.5deg);
-  }
 }
 
 section {
@@ -318,10 +323,11 @@ section {
 .verdict,
 .source-list,
 .profile-card {
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.1);
   border-radius: 8px;
-  background: rgba(255, 253, 244, 0.9);
+  background: rgba(255, 255, 255, 0.74);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
 .brief-panel {
@@ -330,7 +336,7 @@ section {
 }
 
 .intro-panel {
-  background: linear-gradient(135deg, #fffdf4 0%, #ffe24f 58%, #ff7bc6 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 227, 92, 0.76) 58%, rgba(255, 123, 198, 0.72) 100%);
 }
 
 .brief-panel p,
@@ -351,9 +357,9 @@ section {
 
 .tab {
   appearance: none;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.14);
   border-radius: 999px;
-  background: rgba(255, 253, 244, 0.88);
+  background: rgba(255, 255, 255, 0.72);
   color: var(--ink);
   cursor: pointer;
   font: inherit;
@@ -362,7 +368,7 @@ section {
 }
 
 .tab.active {
-  background: var(--ink);
+  background: linear-gradient(135deg, var(--ink), #26304f);
   color: white;
 }
 
@@ -375,10 +381,10 @@ section {
 .artist-card {
   min-height: 230px;
   padding: 0;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.12);
   border-radius: 8px;
-  background: var(--paper);
-  box-shadow: 5px 5px 0 var(--ink);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 16px 34px rgba(16, 24, 39, 0.1);
   cursor: pointer;
   overflow: hidden;
   text-align: left;
@@ -453,7 +459,7 @@ section {
   min-width: 40px;
   height: 34px;
   padding: 0 8px;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.16);
   border-radius: 7px;
   background: var(--lime);
   font-weight: 950;
@@ -498,13 +504,13 @@ section {
 .profile-cover {
   position: relative;
   min-height: 230px;
-  border: 3px solid rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.85);
   border-radius: 8px;
   overflow: hidden;
   background:
     radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.42), transparent 8rem),
     linear-gradient(135deg, var(--tone-a), var(--tone-b));
-  box-shadow: 10px 10px 0 rgba(17, 24, 39, 0.22);
+  box-shadow: 0 18px 45px rgba(17, 24, 39, 0.18);
 }
 
 .profile-content {
@@ -638,43 +644,81 @@ section {
 
 .timeline {
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
 }
 
 .timeline-item {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 18px;
-  border: 2px solid var(--ink);
+  border: 1px solid rgba(16, 24, 39, 0.1);
   border-radius: 8px;
-  background: rgba(255, 253, 244, 0.9);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 16px 36px rgba(16, 24, 39, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.timeline-meta {
+  display: grid;
+  gap: 6px;
+}
+
+.timeline-meta p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.timeline-meta strong {
+  width: fit-content;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(216, 255, 53, 0.9), rgba(127, 246, 213, 0.78));
+  font-size: 13px;
 }
 
 .timeline-date {
   font-weight: 950;
 }
 
+.timeline-detail {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-detail summary {
+  width: fit-content;
+  cursor: pointer;
+  color: #263244;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.timeline-detail summary:hover {
+  color: var(--pink);
+}
+
 .timeline-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 7px;
 }
 
 .timeline-tags span,
 .prediction-list span {
-  padding: 7px 9px;
+  padding: 6px 8px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
 }
 
 .verdict {
   margin-top: 16px;
   padding: 22px;
-  background: linear-gradient(135deg, rgba(255, 253, 244, 0.95), rgba(127, 246, 213, 0.9));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(127, 246, 213, 0.62));
 }
 
 .prediction-layout {
@@ -751,7 +795,6 @@ section {
     flex-direction: column;
   }
 
-  .hero,
   .profile-hero,
   .profile-content,
   .prediction-layout {
@@ -760,11 +803,10 @@ section {
 
   .hero {
     min-height: auto;
-  }
-
-  .hero-art {
-    width: min(460px, 100%);
-    margin: 0 auto;
+    padding: 44px 24px 220px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 48%, rgba(255, 255, 255, 0.24) 100%),
+      url("assets/sbs-summer-fluid-hero.png") center bottom / cover no-repeat;
   }
 
   .brief-grid {
@@ -772,7 +814,7 @@ section {
   }
 
   .timeline-item {
-    grid-template-columns: 1fr;
+    min-width: 0;
   }
 }
 
@@ -804,5 +846,9 @@ section {
 
   .media-card {
     grid-template-columns: 76px 1fr;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
   }
 }
